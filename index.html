@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta name="author" content="Lucien Lee">
+	<meta property="og:title" content="HackNTU 臺大黑客松" /> <meta property="og:type" content="website" /> <meta property="og:url" content="http://www.hackntu.org" /> <meta property="og:site_name" content="HackNTU" /> <meta name="robots" content="noindex" /> <meta property="og:image" content="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-frc3/971093_461399613945267_25069936_n.jpg" /> <meta property="og:description" content="一年一度的NTU Start Up Day已成功讓創業家精神在臺大校園發酵，而臺大校園內也有許多對於程式開發、介面設計、設計思考有熱情的學生，我們希望藉由HackNTU臺大黑客松的活動，讓Hacker精神能夠繼創業家精神成為臺大的精神指標。" />
+	<link rel="shortcut icon" href="./favicon.ico"/>
+	<title>Hack NTU</title>
+	<!--[if IE]> <script type="text/javascript" src="./javascripts/fucking-IE.js"></script> <![endif]-->
+	<script>
+		function getIEVersion(){
+		    var agent = navigator.userAgent;
+		    var reg = /MSIE\s?(\d+)(?:\.(\d+))?/i;
+		    var matches = agent.match(reg);
+		    if (matches != null) {
+		        return { major: matches[1], minor: matches[2] };
+		    }
+		    return { major: "-1", minor: "-1" };
+		}
+		function hackir(){
+			var ss = document.createElement('script');
+			ss.src = "./javascripts/fucking-IE.js";
+			var hh = document.getElementsByTagName('head')[0];
+			hh.appendChild(ss);
+		}
+		var ie_version =  getIEVersion();
+		var is_ie10 = ie_version.major == 10;
+		if(is_ie10)
+			hackir();
+	</script>
+	<link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<section class="slide intro">
+		<div class="block">
+			<div class="title" data-0="top:0px;" data-400="top:400px;">
+				<h1 id="resp_head1">2013 HackNTU</h1>
+				<h2 id="resp_head2">臺大黑客松</h2>
+				<h3 id="resp_head3">Code X Design X Food</h3>
+			</div>
+			<div class="logo" data-100="opacity: 1; top: 0px;" data-400="opacity: 0; top:-100px;">
+				<div class="logo-bk">
+					<img src="images/brain.png" alt="">
+				</div>
+				<div class="logo-round"></div>
+			</div>
+
+			<ul class="arrow" data-0="opacity: 1;" data-150="opacity: 0">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+	<section class="slide about" >
+		<div class="block">
+			<div class="wrapper">
+			<div class="describe">
+				<h1 id="resp_head4" data-300-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:0;">ORIGIN</h1>
+				<p>一年一度的 NTU Start Up Day 已成功讓創業家精神在臺大校園發酵，而臺大校園內也有許多對於程式開發、介面設計、設計思考有熱情的學生，我們希望藉由 HackNTU 臺大黑客松的活動，讓 Hacker 精神能夠繼創業家精神成為臺大的精神指標。</p>
+				<p>資訊相關科系的學生不再只能上課交作業，寫寫河內塔，而是提供一個平台讓開發者們可以用自己的專業能力對社會帶來正面影響力，並在熱血的音樂、豐富美食下盡情發揮創意，交流技術、認識新的朋友。</p>
+			</div>
+			<div class="icon" data-450-top="transform:scale(0);" data-200-top="transform:scale(1)">
+				<img src="images/fire.png" alt="">
+			</div>
+			</div>
+		</div>
+	</section>
+	<section class="slide hackathon">
+		<div class="block">
+			<h1 data-400-top="opacity: 0; left:-100px;" data-150-top="opacity:1;left:0;">WHAT IS HACKATHON</h1>
+			<div class="describe" data-450-top="opacity: 0; transform:scale(1.1);" data-300-top="opacity:1; transform:scale(1);">
+				<p> Hackathon是由寫程式『Hack 』和馬拉松『 Marathon』兩部分組成。<br>Hack原指解決問題、創意程式設計等意思，而非蓄意破壞、竊取機密文件。<br>Hackathon是國外十分流行的創意發想的方式，在活動中人們會放下手邊工作，在輕鬆的環境享受美食，並腦力激盪各種解決問題的創意作品。像是知名企業和大學如：Facebook、Yahoo!、Evernote、紐約大學、賓州大學等皆有舉辦相關活動。</p>
+			</div>
+			<div class="keyboard" data-600-top="top:155%; transform: rotate(10deg);left: -50px;" data-300-top="transform: rotate(0deg); top:100%; left:-10px; opacity: 1;" data-0-top="top:160%; opacity: 0;"></div>
+		</div>
+	</section>
+	<section class="slide dowhat">
+		<div class="wrapper">
+			<h1 data-300-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:0;">WHAT YOU CAN DO?</h1>
+
+			<div class="coding" data-500-center-center="transform: rotateY(90deg); transform-origin:0% 0%; opacity: 0; " data--100-center-center="opacity:1; transform: rotateY(0deg); transform-origin:0% 0%; top:0px;" data--300-center-center="top:200px;">
+
+				<h1 id="res_code" class="chi-type">10小時不斷電Coding奮戰</h1>
+				<img class="icon" src="images/coding.png" alt="">
+			</div>
+			<div class="food" data-500-center-center="transform: rotateY(90deg); transform-origin:100% 0%; opacity: 0; " data-0-center-center="opacity:1; transform: rotateY(0deg); transform-origin:100% 0%; top:100px;" data--200-center-center="top:120px;">
+
+				<img class="icon" src="images/pizza.png" alt="">
+				<h1 class="chi-type">美味Pizza甜點飲料瘋狂暢飲</h1>
+			</div>
+			<div class="famous" data-500-center-center="transform: rotateY(90deg); transform-origin:0% 0%; opacity: 0; " data-100-center-center="opacity:1; transform: rotateY(0deg); transform-origin:0% 0%; top:50px;" data--100-center-center="top:50px;" >
+
+				<h1 class="chi-type">3分鐘刺激成果展示一戰成名</h1>
+				<img class="icon" src="images/crest.png" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="slide subject">
+		<div class="block">
+			<h1 data-300-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:0;">OUR SUBJECT</h1>
+			<div class="describe" data-600-top="opacity: 0; top:-100px;" data-350-top="opacity:1;top:0;">
+				<p>那年夏天，我們用程式改善教育</p>
+				<h2>Code for Education</h2>
+				 <p>主題可以含括校園、教育議題、教學方式、數位化學習等，你可以開發輔助學習的App或是讓人眼睛為之一亮的校園議題討論平台。</p>
+			</div>
+			 <div class="icon" data-400-top="transform:scale(0);" data-200-top="transform:scale(1)">
+			 	<img src="images/pencil.png" alt="">
+			 </div>
+		</div>
+	</section>
+
+	<section class="slide info">
+		<div class="block">
+			<h1 data-300-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:0;">INFORMATION</h1>
+			<ul data-450-top="right:-100%;" data-200-top="right:0;">
+				<li><span>活動時間：</span>2013年 6/2 （日） 9:00am ~ 8:00pm</li>
+				<li><span>活動地點：</span>電機系二館142教室</li>
+				<li><span>報名資格：</span>台灣大學大學部或研究所學生（含以上），無論你是程式開發者、設計師、問題解決者或是對於改善社會有興趣的朋友都歡迎組隊報名。</li>
+				<li><span>團隊人數：</span>1~4人</li>
+				<li><span>報名費用：</span>在校學生 NT$150/人；畢業校友 NT$250/人（含中餐、晚餐）</li>
+				<li><span>競賽主題：</span>Code for Education－那年夏天，我們用程式改善教育</li>
+				<li><span>使用語言：</span>不限，不論你是node.js幫或是PHP門、Python流、rails派、寫Android、Objective-C，甚至寫C++都歡迎。（建議可用開放資料或開放API）</li>
+				<li><span>主辦單位：</span>臺大學務處住宿組同儕團體</li>
+			</ul>
+		</div>
+	</section>
+	<section class="slide join">
+		<div class="block">
+			<h1 data-400-top="opacity: 0; left:-100px;" data-200-top="opacity:1;left:0;">Let' Rock!</h1>
+			<a class="button" href="http://www.accupass.com/go/hackntu_2013" data-580-top="opacity: 0; transform:scale(0.5);" data-410-top="opacity:1; transform:scale(1);">立馬報名</a>
+		</div>
+	</section>
+
+	<section class="slide sponsor">
+		<div class="block">
+			<h1 data-300-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:0;">SPONSOR</h1>
+
+			<div class="item" data-600-top="opacity: 0; transform: rotateY(180deg);" data-300-top="opacity:1;transform: rotateY(0deg);">
+				<a href="http://www.edyna.com/">
+				<img src="images/edy.jpg" width="100%">
+				<h2>網勁科技</h2>
+				</a>
+			</div>
+			<div class="item" data-500-top="opacity: 0; transform: rotateY(180deg);" data-275-top="opacity:1;transform: rotateY(0deg);">
+				<a href="https://www.facebook.com/NTUEA">
+				<img src="images/ntuea.jpg" width="100%">
+				<h2>臺大創聯會</h2>
+				</a>
+			</div>
+			<div class="item" data-400-top="opacity: 0; transform: rotateY(180deg);" data-250-top="opacity:1;transform: rotateY(0deg);">
+				<a href="#">
+				<img src="images/who.png" width="100%">
+				<h2 class="wait">期待您的加入</h2>
+				</a>
+			</div>
+
+		</div>
+	</section>
+	<section class="slide staff">
+			<div style="width:1024px; margin: 0 auto;">
+				<h1 data-300-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:0;">STAFF</h1>
+			</div>
+			<div class="person">
+				<img src="images/KD.Chang.png" alt="">
+				<div class="information">
+					<a class="name" href="https://www.facebook.com/KaiDi.Chang">張凱迪 </a><a href="http://cofounderinc.com/">@ibelieveicaner</a>
+					<p>臺灣大學，主修經濟學，輔修資訊和創業，目前是臺大資管所研究生，研究領域為：Web Mining，Web IR。是個半路出家的工程師，致力於整合科技與人文，讓這個世界更加開放美好。</p>
+				</div>
+			</div>
+			<div class="person">
+				<img src="images/lucien.png" alt="">
+				<div class="information">
+					<a class="name" href="https://www.facebook.com/lucien.leee">路西恩</a>
+					<a href="http://selfecy.com">@Self Efficacy</a>
+					<p>從管理學院準備叛逃到網媒所去搞人機互動，涉略資訊、設計與商管三個領域，想試著結合這三者的力量來讓世界變得更美好，認為噴口水不如噴汗爽快，比起單純的嘴砲，更喜歡口手並用。致力於前端開發與互動設計。</p>
+				</div>
+			</div>
+			<div class="person">
+				<img src="images/kpman.jpg" alt="">
+				<div class="information">
+					<a class="name" href="https://www.facebook.com/chienhsun.tseng.9">曾建勳</a>
+					<a href="http://code.kpman.cc">@kpman</a>
+					<p>目前就讀臺大資管系，未來持續攻讀臺大資管所，致力於研究前端技術及使用者經驗，體會到任何語言都只是工具，認為這世上有許多事情值得被發掘及分享，內心渴望與志同道合的夥伴讓生活更加美好。</p>
+				</div>
+			</div>
+			<div class="person">
+				<img src="images/tom.jpg" alt="">
+				<div class="information">
+					<a class="name" href="https://www.facebook.com/tomchentw">陳昱圻</a>
+					<a href="http://blog.tomchentw.com/">@TOM的異想空間</a>
+					<p>目前就讀台灣大學電機系，喜歡用雙手解決問題，因此學習程式設計後便愛上軟體開發。接觸過Android與Ruby on Rails，期以網站解決部分資訊散落問題。我認為，不斷追尋進步是自我突破最好的方式，這正好跟HackNTU的精神不謀而合。</p>
+				</div>
+			</div>
+			<div class="person">
+				<img src="images/jason.jpg" alt="">
+				<div class="information">
+					<a class="name" href="https://www.facebook.com/YachenHsieh">謝亞辰</a>
+					<p>目前就讀台灣大學資管系，喜歡追求能真正改善生活的應用。熱愛接觸不同領域的事物，相信跨領域是未來世界的關鍵，不同領域之間通常藏有彼此需要的答案，期許自己能從不斷地摸索中找到自我，帶給這個社會一點點不一樣的改變。</p>
+				</div>
+			</div>
+
+	</section>
+	<footer>
+		<div>
+			<h2>Contact us</h2>
+			<a href="mailto:ibelieveicaner@gmail.com">聯絡我們</a>
+			<span> | </span>
+			<a href="https://www.facebook.com/hackNTU">官方粉絲頁</a>
+		</div>
+		<a class="author" href="https://www.facebook.com/lucien.leee">Logo and Design by Lucien</a>
+	</footer>
+</body>
+<script src="./javascripts/jquery-1.8.3.js"></script>
+<script src="./javascripts/jquery.fittext.js"></script>
+<script src="./javascripts/skrollr.min.js"></script>
+<script>
+  $("#resp_head1").fitText(0.6);
+  $("#resp_head2").fitText(0.5);
+  $("#resp_head3").fitText(1.04);
+  $("#resp_head4").fitText(0.6);
+  $("#res_code").fitText(1.1);
+</script>
+<script>
+	function resizePages() {
+		var h = $(window).height();
+		var height = h < 600 ? 600 : h;
+		$('section').css('height',height);
+		$('.dowhat').css('height',height*2);
+		$('.staff').removeAttr('style');
+	}
+	resizePages();
+	var sk = skrollr.init({forceHeight:false});
+
+	$(function(){
+		$(window).resize(function(e) {
+			resizePages();
+			sk.refresh();
+		});
+	});
+</script>
+<script>
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-40922390-1', 'hackntu.org');
+  ga('send', 'pageview');
+</script>
+</html>
