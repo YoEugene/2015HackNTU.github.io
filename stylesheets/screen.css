@@ -527,7 +527,7 @@ p {
 .logo .logo-bk img {
   position: relative;
   z-index: 2;
-  left: 30px;
+  left: -5px;
   -webkit-animation: bumping 2s infinite;
   -moz-animation: bumping 2s infinite;
   -ms-animation: bumping 2s infinite;
