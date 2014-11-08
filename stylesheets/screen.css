@@ -437,7 +437,7 @@ p {
 /* line 32, ../sass/screen.scss */
 .slide {
   width: 100%;
-  min-height: 600px;
+  min-height: 800px;
   position: relative;
   overflow: hidden;
 }
@@ -458,7 +458,7 @@ p {
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  max-width: 250px;
+  max-width: 300px;
   width: 40%;
   text-shadow: -4px 4px #857C00;
 }
