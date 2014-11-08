@@ -451,14 +451,14 @@ p {
 
 /* line 45, ../sass/screen.scss */
 .intro {
-  background: #2f6c71;
+  background: #FFFFFF;
 }
 /* line 48, ../sass/screen.scss */
 .intro .title {
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  max-width: 360px;
+  max-width: 250px;
   width: 40%;
   text-shadow: -4px 4px #857C00;
 }
@@ -519,9 +519,9 @@ p {
   top: 25px;
   width: 310px;
   height: 310px;
-  border: 8px #4CA7D4 solid;
+  /*border: 8px #4CA7D4 solid;*/
   border-radius: 200px;
-  background: #8DC63F;
+  /*background: #8DC63F;*/
 }
 /* line 120, ../sass/screen.scss */
 .logo .logo-bk img {
@@ -535,7 +535,7 @@ p {
   animation: bumping 2s infinite;
 }
 /* line 131, ../sass/screen.scss */
-.logo .logo-bk::before {
+/*.logo .logo-bk::before {
   content: "";
   position: absolute;
   top: 214px;
@@ -549,7 +549,7 @@ p {
   -ms-animation: bumping-shadow 2s infinite;
   -o-animation: bumping-shadow 2s infinite;
   animation: bumping-shadow 2s infinite;
-}
+}*/
 
 /* line 150, ../sass/screen.scss */
 .logo:hover .logo-round {
@@ -712,7 +712,7 @@ ul.arrow li {
 
 /* line 318, ../sass/screen.scss */
 .about {
-  background: #FEFBF1;
+  background: #FFAA00;
 }
 /* line 320, ../sass/screen.scss */
 .about h1 {
@@ -831,7 +831,7 @@ ul.arrow li {
 
 /* line 417, ../sass/screen.scss */
 .hackathon {
-  background: #E96300;
+  background: #FFEF24;
   color: #fff;
 }
 /* line 423, ../sass/screen.scss */
@@ -854,7 +854,7 @@ ul.arrow li {
 
 /* line 439, ../sass/screen.scss */
 .dowhat {
-  background: #5EBFBC;
+  background: #FFFFFF;
   color: #fff;
 }
 /* line 442, ../sass/screen.scss */
@@ -1088,7 +1088,7 @@ ul.arrow li {
 /* line 634, ../sass/screen.scss */
 .staff {
   position: relative;
-  background: #935524;
+  background: #72541E;
   color: #fff;
 }
 /* line 638, ../sass/screen.scss */
@@ -1153,7 +1153,7 @@ ul.arrow li {
 footer {
   position: relative;
   overflow: hidden;
-  background: #0C2C4C;
+  background: #00003D;
   color: #fff;
   height: 140px;
 }
