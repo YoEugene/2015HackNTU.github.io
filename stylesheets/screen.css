@@ -485,6 +485,18 @@ p {
   font-family: "Patua One", cursive;
 }
 
+.intro .time{
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 60%;
+  text-shadow: -2px 2px #857C00;
+  text-align: center;
+  line-height: 1em;
+  color: #FBEE3F;
+}
+
 /* line 84, ../sass/screen.scss */
 .logo {
   box-sizing: border-box;
