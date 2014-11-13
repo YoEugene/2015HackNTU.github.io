@@ -491,10 +491,10 @@ p {
   margin: 0 auto;
   max-width: 800px;
   width: 60%;
-  text-shadow: -2px 2px #857C00;
+  /*text-shadow: -2px 2px #FFFFFF;*/
   text-align: center;
   line-height: 1em;
-  color: #FBEE3F;
+  color: #000000;
 }
 
 /* line 84, ../sass/screen.scss */
