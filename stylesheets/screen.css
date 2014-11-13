@@ -422,7 +422,7 @@ p {
 
 /* line 20, ../sass/screen.scss */
 .chi-type {
-  font-family: "Lantinghei TC", Hiragino Kaku Gothic Pro, Heiti TC, "微軟正黑體", "STHeiti Light", "Microsoft Yahei", "Microsoft JhengHei", Helvetica, sans-serif !important;
+  font-family: "Patua One", "Lantinghei TC", Hiragino Kaku Gothic Pro, Heiti TC, "微軟正黑體", "STHeiti Light", "Microsoft Yahei", "Microsoft JhengHei", Helvetica, sans-serif !important;
 }
 
 /* line 24, ../sass/screen.scss */
@@ -493,7 +493,7 @@ p {
   width: 60%;
   /*text-shadow: -2px 2px #FFFFFF;*/
   text-align: center;
-  line-height: 1em;
+  line-height: 2em;
   color: #000000;
 }
 
@@ -868,6 +868,7 @@ ul.arrow li {
 .dowhat {
   background: #5596FF;
   color: #FFFFFF;
+  height: 900px;
 }
 /* line 442, ../sass/screen.scss */
 .dowhat h1 {
@@ -1184,10 +1185,11 @@ footer div h2 {
   font-family: "Patua One", cursive;
   font-size: 2em;
   margin: 0;
+  margin-bottom: 5px;
 }
 /* line 703, ../sass/screen.scss */
 footer div a {
-  color: #ddd;
+  color: #fff;
   text-decoration: none;
   text-align: center;
 }
@@ -1197,10 +1199,11 @@ footer div a:hover {
 }
 /* line 712, ../sass/screen.scss */
 footer a.author {
+  margin-right: 29px;
   margin-top: 5px;
   display: block;
   text-decoration: none;
-  color: #999;
+  color: #fff;
   text-align: center;
   font-size: 13px;
 }
