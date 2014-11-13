@@ -15,10 +15,18 @@
 	<link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link rel="shortcut icon" href="./favicon.ico"/>
 	<link href="./stylesheets/print.css" rel="stylesheet" type="text/css" />
+	<link href="./stylesheets/animate.css" rel="stylesheet" type="text/css" />
 
 	<title>Hack NTU</title>
 	<!--[if IE]> <script type="text/javascript" src="./javascripts/fucking-IE.js"></script> <![endif]-->
 	<script>
+		function animateWilson1(){
+			$('#wilsonName').addClass('animated tada');
+			// $('#wilsonName').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething());
+		}
+		function animateWilson2(){
+			$('#wilsonName').removeClass('animated tada');
+		}
 		function getIEVersion(){
 		    var agent = navigator.userAgent;
 		    var reg = /MSIE\s?(\d+)(?:\.(\d+))?/i;
@@ -38,6 +46,7 @@
 		var is_ie10 = ie_version.major == 10;
 		if(is_ie10)
 			hackir();
+
 	</script>
 
 </head>
@@ -176,7 +185,7 @@
 
         <div style="text-align:center" class="col-lg-4">
           <img class="img-circle" src="images/2015hackNTUWilson.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/ji.huang.948" style="text-decoration:none;color:#FFEF24">黃偉軒 Wilson</a></h2>
+          <h2 id="wilsonName" onmouseover="animateWilson1()" onmouseout="animateWilson2()"><a href="https://www.facebook.com/ji.huang.948" style="text-decoration:none;color:#FFEF24">黃偉軒 Wilson</a></h2>
           <h4 style="color:#FFAA00">@Digital Marketing</h4>
           <p>遊歷台成政三間大學，最後落腳於台大資工。妄想成為Iron man，熱愛高科技、分析資料情報、設計、與人交流。擅長觀察使用者，現正在努力成為像樣的UI/UX Designer。喜歡唱歌，調酒，以及說做就做的Hacker spirit</p>
         </div><!-- /.col-lg-4 -->
@@ -222,7 +231,7 @@
         
 	
 			
-			<div class="person">
+			<!-- <div class="person">
 				<img src="images/poseidon.png" alt="">
 				<div class="information">
 					<a class="name" href="https://www.facebook.com/handsomeposeidon?fref=ts">侯海琦 Poseidon</a>
@@ -302,7 +311,7 @@
 					<a>@Training Gathering</a>
 					<p>電機系大三，雙主修財金，曾試圖用經濟學解釋電子學，對程式有莫名奇妙的熱情。廣泛涉獵不同領域，並持續嘗試將它們系統性的整合。喜歡動手解決問題，希望能讓更多人了解Hacker Spirit，一起讓世界變得更好。</p>
 				</div>
-			</div>
+			</div> -->
 
 
 	</section>
