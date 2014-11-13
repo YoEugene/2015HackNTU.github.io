@@ -27,6 +27,20 @@
 		function animateWilson2(){
 			$('#wilsonName').removeClass('animated tada');
 		}
+		function animatePuChin1(){
+			$('#PuChinName').addClass('animated hinge');
+			// $('#wilsonName').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething());
+		}
+		function animatePuChin2(){
+			$('#PuChinName').removeClass('animated hinge');
+		}
+		function animateBun1(){
+			$('#BunName').addClass('animated wobble');
+			// $('#wilsonName').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething());
+		}
+		function animateBun2(){
+			$('#BunName').removeClass('animated wobble');
+		}
 		function getIEVersion(){
 		    var agent = navigator.userAgent;
 		    var reg = /MSIE\s?(\d+)(?:\.(\d+))?/i;
@@ -176,7 +190,7 @@
         <div style="text-align:center" class="col-lg-4">
           <img class="img-circle puchin" src="images/puchin.png" alt="Generic placeholder image" style="width: 180px; height: 180px;"
           onmouseover="this.src='images/puchin2.jpg';" onmouseout="this.src='images/puchin.png';">
-          <h2><a href="https://www.facebook.com/profile.php?id=100002146774789" style="text-decoration:none;color:#FFEF24">陳步青 Puchin</a></h2>
+          <h2 id="PuChinName" onmouseover="animatePuChin1()" onmouseout="animatePuChin2()"><a href="https://www.facebook.com/profile.php?id=100002146774789" style="text-decoration:none;color:#FFEF24">陳步青 Puchin</a></h2>
           <h4 style="color:#FFAA00">@Web Development</h4>
           <p>好久沒寫日記了，今天一邊寫一邊翻開來看看記錄的陳年往事，不論是開心或是悲傷，慶幸自己有把每一段的刻骨銘心保存下來。時間真的很厲害，可以把很多不愉快沖淡。</p>
         </div><!-- /.col-lg-4 -->
@@ -190,8 +204,8 @@
           <p>遊歷台成政三間大學，最後落腳於台大資工。妄想成為Iron man，熱愛高科技、分析資料情報、設計、與人交流。擅長觀察使用者，現正在努力成為像樣的UI/UX Designer。喜歡唱歌，調酒，以及說做就做的Hacker spirit</p>
         </div><!-- /.col-lg-4 -->
         <div style="text-align:center" class="col-lg-4">
-          <img class="img-circle" src="images/xiaobun.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/profile.php?id=100001968982237" style="text-decoration:none;color:#FFEF24">徐粲翔 Bun</a></h2>
+          <img class="img-circle" src="images/xiaobun.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;" onmouseover="this.src='images/xiaobun2.jpg';" onmouseout="this.src='images/xiaobun.jpg';">
+          <h2 id="BunName" onmouseover="animateBun1()" onmouseout="animateBun2()"><a href="https://www.facebook.com/profile.php?id=100001968982237" style="text-decoration:none;color:#FFEF24">徐粲翔 Bun</a></h2>
           <h4 style="color:#FFAA00">@Web Development</h4>
           <p>台灣人嘴巴真的很賤，什麼鄉民文化根本一堆垃圾，如果是你的朋友現在命危，現在還說的出這些低能話，每次總是一堆人喜歡戰台大，說台大花這麼多錢培育一堆殺人犯，蠢蛋，等等的。</p>
         </div><!-- /.col-lg-4 -->
