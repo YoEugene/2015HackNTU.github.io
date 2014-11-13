@@ -451,7 +451,9 @@ p {
 
 /* line 45, ../sass/screen.scss */
 .intro {
-  background: #FFFFFF;
+  /*background: #000000;*/
+  background-image: url('images/upfeathers.png');
+  background-repeat: no-repeat;
 }
 /* line 48, ../sass/screen.scss */
 .intro .title {
