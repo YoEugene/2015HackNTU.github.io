@@ -153,7 +153,7 @@
     </div>
   </section>
 
-  <section class="slide staff" style="background-image: url('images/bedge.png');">
+  <section class="slide staff">
     <div style="width:1024px; margin: 0 auto;" >
       <h1 data-300-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:0;">Team</h1>
     </div>
@@ -251,10 +251,12 @@
 <script src="./javascripts/jquery-1.8.3.js"></script>
 <script src="./javascripts/jquery.fittext.js"></script>
 <script src="./javascripts/skrollr.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
 <script type="text/javascript" src="javascripts/jquery.preload.js"></script>
 <script>
-  $.preload('images/bedge.png');
+  jQuery(document).ready(function($)
+  {
+    $.preload('images/bedge.png');
+  }
   $("#resp_head1").fitText(0.6);
   $("#resp_head2").fitText(0.5);
   $("#resp_head3").fitText(1.04);
