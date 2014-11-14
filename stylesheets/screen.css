@@ -449,26 +449,40 @@ p {
   position: relative;
 }
 
+
 /* line 45, ../sass/screen.scss */
 .intro {
-  /*background: #000000;*/
-  background-image: url('images/upfeathers.png');
-  background-repeat: no-repeat;
+  background: #FFFFFF;
 }
+
+/*.bg {
+  position: fixed;
+  width: 100%;
+  height: 430px;
+  background-image: url('images/homepage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}*/
+
 /* line 48, ../sass/screen.scss */
 .intro .title {
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 400px;
   width: 40%;
-  text-shadow: -4px 4px #857C00;
 }
+.intro .title a:hover {
+  text-shadow: -8px 8px #000000;
+  text-decoration: none;
+}
+
 /* line 56, ../sass/screen.scss */
 .intro .title h1 {
   margin: 0;
   text-align: center;
-  color: #FBEE3F;
+  color: #FFFFFF;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
 }
@@ -477,7 +491,7 @@ p {
   margin: 0;
   text-align: center;
   line-height: 1em;
-  color: #FBEE3F;
+  color: #FFFFFF;
 }
 /* line 70, ../sass/screen.scss */
 .intro .title h3 {
@@ -487,16 +501,20 @@ p {
   font-family: "Patua One", cursive;
 }
 
+.intro .space{
+  height: 3em;
+}
+
 .intro .time{
   position: relative;
   z-index: 2;
   margin: 0 auto;
   max-width: 800px;
   width: 60%;
-  /*text-shadow: -2px 2px #FFFFFF;*/
+  text-shadow: -4px 4px #000000;
   text-align: center;
   line-height: 2em;
-  color: #000000;
+  color: #FFFFFF;
 }
 
 /* line 84, ../sass/screen.scss */
@@ -506,7 +524,7 @@ p {
   position: relative;
   margin: 3% auto 20px;
   width: 360px;
-  height: 360px;
+  height: 60px;
 }
 /* line 92, ../sass/screen.scss */
 .logo .logo-round {
@@ -514,7 +532,7 @@ p {
   -moz-box-sizing: border-box;
   position: absolute;
   width: 360px;
-  height: 360px;
+  height: 60px;
   top: 0;
   border: 12px #4CA7D4 solid;
   border-radius: 50%;
@@ -731,7 +749,7 @@ ul.arrow li {
 /* line 320, ../sass/screen.scss */
 .about h1 {
   margin: 5% 0 0 0;
-  color: #FFFFFF;
+  color: #EB7111;
 }
 /* line 324, ../sass/screen.scss */
 .about .describe {
@@ -845,8 +863,9 @@ ul.arrow li {
 
 /* line 417, ../sass/screen.scss */
 .hackathon {
-  background: #FFEF24;
-  color: #fff;
+  background: #3A7BE9;
+  /*background-image: url(images/grey_wash_wall.png);*/
+  color: #FFFFFF;
 }
 /* line 423, ../sass/screen.scss */
 .hackathon .keyboard {
@@ -860,8 +879,8 @@ ul.arrow li {
   max-width: 600px;
   width: 80%;
   margin: 9% auto 0;
-  padding: 10px 24px;
-  background: rgba(255, 255, 255, 0.5);
+  padding: 5px 12px;
+  background: rgba(243, 136, 94, 1.0);
   border-radius: 20px;
   color: #4A1B00;
 }
@@ -880,7 +899,7 @@ ul.arrow li {
 /* line 446, ../sass/screen.scss */
 .dowhat .wrapper {
   width: 1024px;
-  margin: 15% auto;
+  margin: 5% auto;
 }
 /* line 449, ../sass/screen.scss */
 .dowhat .wrapper div {
@@ -890,12 +909,12 @@ ul.arrow li {
 /* line 452, ../sass/screen.scss */
 .dowhat .wrapper div .left{
   vertical-align: top;
-  padding: 0 70px 0 0;
+  padding: 30px 70px 0 0;
 }
 
 .dowhat .wrapper div .right{
   vertical-align: top;
-  padding: 0 0 0 50px;
+  padding: 30px 0 0 50px;
 }
 
 /* line 463, ../sass/screen.scss */
