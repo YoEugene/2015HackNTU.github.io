@@ -74,7 +74,7 @@
       <div class="title" data-0="top:0px;" data-200="top:200px;">
         <a href="https://www.facebook.com/events/312058285645634/?notif_t=plan_user_invited" target="_blank">
           <h1 id="resp_head1">2015HackNTU</h1>
-          <h2 id="resp_head2">團隊招募</h2>
+          <h2 id="resp_head2">籌備團隊招募</h2>
           <!-- <h3>密切注意！</h3> -->
         </a>
       </div>
@@ -253,12 +253,14 @@
 <script src="./javascripts/skrollr.min.js"></script>
 <script type="text/javascript" src="javascripts/jquery.preload.js"></script>
 <script>
+  $.preload('images/bedge.png');
   jQuery(window).load(function($)
   {
-    $.preload('images/bedge.png');
+    // alert('歡迎加入HackNTU');  
   });
+
   $("#resp_head1").fitText(0.6);
-  $("#resp_head2").fitText(0.5);
+  $("#resp_head2").fitText(0.7);
   $("#resp_head3").fitText(1.04);
   $("#resp_head4").fitText(0.6);
   $("#res_code").fitText(1.1);
