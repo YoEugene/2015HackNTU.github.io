@@ -1206,3 +1206,14 @@ footer a.author {
   text-align: center;
   font-size: 13px;
 }
+
+.puchin a {
+        background: url("/images/puchin.png");/*預設顯示圖片*/
+        display: block;
+        font-size: 0; 
+        height: 180px;/*圖片高度*/
+        width: 180px;/*圖片寬度*/
+    }
+.puchin a:hover {
+    background: url("/images/puchin2.jpg"); /*滑鼠移過顯示圖片*/
+}
