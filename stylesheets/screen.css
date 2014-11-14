@@ -420,6 +420,8 @@ p {
   font-size: 17px;
 }
 
+div#preload { display: none; }
+
 /* line 20, ../sass/screen.scss */
 .chi-type {
   font-family: "Patua One", "Lantinghei TC", Hiragino Kaku Gothic Pro, Heiti TC, "微軟正黑體", "STHeiti Light", "Microsoft Yahei", "Microsoft JhengHei", Helvetica, sans-serif !important;
