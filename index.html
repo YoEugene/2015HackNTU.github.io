@@ -253,9 +253,9 @@
 <script src="./javascripts/skrollr.min.js"></script>
 <script type="text/javascript" src="javascripts/jquery.preload.js"></script>
 <script>
-  jQuery(document).ready(function($)
+  jQuery(window).load(function($)
   {
-    $.preload('images/bedge.png');
+    $.preload('images/bedge.png', 'images/homepage.png');
   }
   $("#resp_head1").fitText(0.6);
   $("#resp_head2").fitText(0.5);
