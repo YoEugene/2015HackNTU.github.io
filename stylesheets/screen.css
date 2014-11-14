@@ -476,11 +476,6 @@ div#preload { display: none; }
   width: 40%;
 }
 
-.intro .title .seperate {
-  width: 200px;
-  display: inline-block;
-}
-
 .intro .title a:hover {
   text-shadow: -8px 8px #000000;
   text-decoration: none;
