@@ -420,6 +420,8 @@ p {
   font-size: 17px;
 }
 
+div#preload { display: none; }
+
 /* line 20, ../sass/screen.scss */
 .chi-type {
   font-family: "Patua One", "Lantinghei TC", Hiragino Kaku Gothic Pro, Heiti TC, "微軟正黑體", "STHeiti Light", "Microsoft Yahei", "Microsoft JhengHei", Helvetica, sans-serif !important;
@@ -511,7 +513,7 @@ p {
   margin: 0 auto;
   max-width: 800px;
   width: 60%;
-  text-shadow: -4px 4px #000000;
+  /*text-shadow: -4px 4px #000000;*/
   text-align: center;
   line-height: 2em;
   color: #FFFFFF;
@@ -763,7 +765,7 @@ ul.arrow li {
 .about .icon {
   display: inline-block;
   position: relative;
-  top: -50px;
+  top: -120px;
   width: 320px;
   height: 320px;
   border-radius: 50%;
@@ -886,35 +888,35 @@ ul.arrow li {
 }
 
 /* line 439, ../sass/screen.scss */
-.dowhat {
+.spirits {
   background: #5596FF;
   color: #FFFFFF;
-  height: 900px;
+  height: 500px;
 }
 /* line 442, ../sass/screen.scss */
-.dowhat h1 {
+.spirits h1 {
   display: inline-block;
   text-align: center;
 }
 /* line 446, ../sass/screen.scss */
-.dowhat .wrapper {
+.spirits .wrapper {
   width: 1024px;
   margin: 5% auto;
 }
 /* line 449, ../sass/screen.scss */
-.dowhat .wrapper div {
-  margin-top: 5%;
+.spirits .wrapper div {
+  /*margin-top: 5%;*/
   position: relative;
 }
 /* line 452, ../sass/screen.scss */
-.dowhat .wrapper div .left{
-  vertical-align: top;
-  padding: 30px 70px 0 0;
+.spirits .wrapper div .left{
+  /*vertical-align: top;*/
+  padding: 0px 70px auto 0;
 }
 
-.dowhat .wrapper div .right{
-  vertical-align: top;
-  padding: 30px 0 0 50px;
+.spirits .wrapper div .right{
+  /*vertical-align: top;*/
+  padding: 0px auto 0 50px;
 }
 
 /* line 463, ../sass/screen.scss */
@@ -1136,6 +1138,13 @@ ul.arrow li {
   margin: 1em 0 0.8em;
 }
 
+/*.staff .col-lg-4{
+  width: 400px;
+}
+
+.staff .col-xs-6{
+  width: 400px;
+}*/
 
 /* line 641, ../sass/screen.scss */
 .staff .person {
