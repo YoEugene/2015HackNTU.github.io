@@ -1127,14 +1127,16 @@ ul.arrow li {
 /* line 634, ../sass/screen.scss */
 .staff {
   position: relative;
-  background-image: url('images/pad.png');
   /*background: #72541E;*/
+  background-image: url('../images/bedge.png');
   color: #fff;
 }
 /* line 638, ../sass/screen.scss */
 .staff h1 {
   margin: 1em 0 0.8em;
 }
+
+
 /* line 641, ../sass/screen.scss */
 .staff .person {
   position: relative;
