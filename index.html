@@ -75,6 +75,7 @@
         <a href="https://www.facebook.com/events/312058285645634/?notif_t=plan_user_invited" target="_blank">
           <h1 id="resp_head1">2015HackNTU</h1>
           <h2 id="resp_head2">活動籌備團隊招募</h2>
+
           <!-- <h3>密切注意！</h3> -->
         </a>
       </div>
@@ -153,7 +154,7 @@
     </div>
   </section>
 
-  <section class="slide staff" style="background-image: url('images/bedge.png');">
+  <section class="slide staff">
     <div style="width:1024px; margin: 0 auto;" >
       <h1 data-300-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:0;">Team</h1>
     </div>
@@ -218,7 +219,7 @@
        
         <div style="text-align:center; margin:10px auto; height: 500px; width: 33%;" class="col-sm-4">
           <img class="img-circle" src="images/eric.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/s3355004?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">辛爾康 Eric</a></h2>
+          <h2><a href="https://www.facebook.com/uniericuni?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">辛爾康 Eric</a></h2>
           <h4 style="color:#75422D">Brand Design</h4>
           <p>電機三外加雙主修到快變正科的哲學，同時也在藝術設計學程開心玩耍中；因為想同時兼顧興趣和主科，衝了很多活動做了很多職務，兩年下來一直以為自己過得是不健康的爆肝生活，最近才發現原來只是熊熊燃燒的熱血Hacker魂。喜歡康德和克理斯多福諾蘭的電影。</p>
         </div>
@@ -251,9 +252,20 @@
 <script src="./javascripts/jquery-1.8.3.js"></script>
 <script src="./javascripts/jquery.fittext.js"></script>
 <script src="./javascripts/skrollr.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery.preload.js"></script>
 <script>
+  $.preload('images/bedge.png');
+  jQuery(window).load(function($)
+  {
+    // alert('歡迎加入HackNTU');  
+  });
+
   $("#resp_head1").fitText(0.6);
+<<<<<<< HEAD
   $("#resp_head2").fitText(0.8);
+=======
+  $("#resp_head2").fitText(0.7);
+>>>>>>> 2cefca068dff9a99bba58bc34cf56157029f95d1
   $("#resp_head3").fitText(1.04);
   $("#resp_head4").fitText(0.6);
   $("#res_code").fitText(1.1);

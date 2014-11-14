@@ -472,7 +472,7 @@ div#preload { display: none; }
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 600px;
   width: 40%;
 }
 .intro .title a:hover {
