@@ -1,218 +1,215 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-	<meta name="author" content="Lucien Lee">
-	<meta property="og:title" content="HackNTU 臺大黑客松" /> 
-	<meta property="og:type" content="website" /> 
-	<meta property="og:url" content="http://www.hackntu.org" /> 
-	<meta property="og:site_name" content="HackNTU" /> 
-	<meta name="robots" content="noindex" /> 
-	<meta property="og:image" content="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-frc3/971093_461399613945267_25069936_n.jpg" /> 
-	<meta property="og:description" content="一年一度的NTU Start Up Day已成功讓創業家精神在臺大校園發酵，而臺大校園內也有許多對於程式開發、介面設計、設計思考有熱情的學生，我們希望藉由HackNTU臺大黑客松的活動，讓Hacker精神能夠繼創業家精神成為臺大的精神指標。" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">	
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <meta name="author" content="Lucien Lee">
+  <meta property="og:title" content="HackNTU 臺大黑客松" /> 
+  <meta property="og:type" content="website" /> 
+  <meta property="og:url" content="http://www.hackntu.org" /> 
+  <meta property="og:site_name" content="HackNTU" /> 
+  <meta name="robots" content="noindex" /> 
+  <meta property="og:image" content="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-frc3/971093_461399613945267_25069936_n.jpg" /> 
+  <meta property="og:description" content="一年一度的NTU Start Up Day已成功讓創業家精神在臺大校園發酵，而臺大校園內也有許多對於程式開發、介面設計、設計思考有熱情的學生，我們希望藉由HackNTU臺大黑客松的活動，讓Hacker精神能夠繼創業家精神成為臺大的精神指標。" />
 
-	<link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	<link rel="shortcut icon" href="./favicon.ico"/>
-	<link href="./stylesheets/print.css" rel="stylesheet" type="text/css" />
-	<link href="./stylesheets/animate.css" rel="stylesheet" type="text/css" />
+  <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="./favicon.ico"/>
+  <link href="./stylesheets/print.css" rel="stylesheet" type="text/css" />
+  <link href="./stylesheets/animate.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">  
 
-	<title>Hack NTU</title>
-	<!--[if IE]> <script type="text/javascript" src="./javascripts/fucking-IE.js"></script> <![endif]-->
-	<script>
-		function animateWilson1(){
-			$('#wilsonName').addClass('animated tada');
-			// $('#wilsonName').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething());
-		}
-		function animateWilson2(){
-			$('#wilsonName').removeClass('animated tada');
-		}
-		function animatePuChin1(){
-			$('#PuChinName').addClass('animated hinge');
-			// $('#wilsonName').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething());
-		}
-		function animatePuChin2(){
-			$('#PuChinName').removeClass('animated hinge');
-		}
-		function animateBun1(){
-			$('#BunName').addClass('animated wobble');
-			// $('#wilsonName').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething());
-		}
-		function animateBun2(){
-			$('#BunName').removeClass('animated wobble');
-		}
-		function getIEVersion(){
-		    var agent = navigator.userAgent;
-		    var reg = /MSIE\s?(\d+)(?:\.(\d+))?/i;
-		    var matches = agent.match(reg);
-		    if (matches != null) {
-		        return { major: matches[1], minor: matches[2] };
-		    }
-		    return { major: "-1", minor: "-1" };
-		}
-		function hackir(){
-			var ss = document.createElement('script');
-			ss.src = "./javascripts/fucking-IE.js";
-			var hh = document.getElementsByTagName('head')[0];
-			hh.appendChild(ss);
-		}
-		var ie_version =  getIEVersion();
-		var is_ie10 = ie_version.major == 10;
-		if(is_ie10)
-			hackir();
 
-	</script>
+  <title>2015HackNTU</title>
+  <!--[if IE]> <script type="text/javascript" src="./javascripts/fucking-IE.js"></script> <![endif]-->
+  <script>
+    function animateWilsonStart(){
+      $('#wilsonName').addClass('animated flash');
+      // $('#wilsonName').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething());
+    }
+    function animateWilsonEnd(){
+      $('#wilsonName').removeClass('animated flash');
+    }
+    function animatePuChinStart(){
+      $('#PuChinName').addClass('animated hinge');
+      // $('#wilsonName').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething());
+    }
+    function animatePuChinEnd(){
+      $('#PuChinName').removeClass('animated hinge');
+    }
+    function animateBunStart(){
+      $('#BunName').addClass('animated wobble');
+      // $('#wilsonName').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething());
+    }
+    function animateBunEnd(){
+      $('#BunName').removeClass('animated wobble');
+    }
+    function getIEVersion(){
+        var agent = navigator.userAgent;
+        var reg = /MSIE\s?(\d+)(?:\.(\d+))?/i;
+        var matches = agent.match(reg);
+        if (matches != null) {
+            return { major: matches[1], minor: matches[2] };
+        }
+        return { major: "-1", minor: "-1" };
+    }
+    function hackir(){
+      var ss = document.createElement('script');
+      ss.src = "./javascripts/fucking-IE.js";
+      var hh = document.getElementsByTagName('head')[0];
+      hh.appendChild(ss);
+    }
+    var ie_version =  getIEVersion();
+    var is_ie10 = ie_version.major == 10;
+    if(is_ie10)
+      hackir();
+
+  </script>
 
 </head>
+
 <body>
-	<section class="slide intro">
-		<div class="block">
-			<div class="title" data-0="top:0px;" data-400="top:400px;">
-				<h1 id="resp_head1">2015HackNTU</h1>
-				<h2 id="resp_head2">團隊招募   說明會</h2>
-				<!-- <h3>密切注意！</h3> -->
-			</div>
-			<div class="logo" data-100="opacity: 0.7; top: 12px;" data-400="opacity: 0; top:-100px;">
-				<div class="logo-bk">
-					<a href="https://www.facebook.com/events/312058285645634/?notif_t=plan_user_invited">
-						<img src="images/brain.png" alt="">
-					</a>
-				</div>
-				<!-- <div class="logo-round"></div> -->
-			</div>
 
-<!-- 			<ul class="arrow" data-0="opacity: 1;" data-150="opacity: 0">
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul> -->
-			<div>
-				<h2 class="chi-type time">第一場：11/27(四) 18:30 @ 新生102</h2>	
-				<h2 class="chi-type time">第二場：11/29(六) 18:30 @ 新生102</h2>
-				<!-- <p>請密切注意</p> -->
+  <section class="slide intro">
+    <div class="bg" style="position: fixed; width: 100%; height: 730px; background-image: url('images/homepage.png'); background-size: cover; background-repeat: no-repeat; background-position: top center; z-index: 0"></div>
+    <div class="block">
+      <div class="title" data-0="top:0px;" data-200="top:200px;">
+        <a href="https://www.facebook.com/hackNTU" target="_blank">
+          <h1 id="resp_head1">2015HackNTU</h1>
+          <h2 id="resp_head2">團隊招募</h2>
+          <!-- <h3>密切注意！</h3> -->
+        </a>
+      </div>
+      <div class="logo" data-100="opacity: 0.7; top: 12px;" data-400="opacity: 0; top:-50px;">
+      </div>
+      <div>
+        <div class="space"></div> 
+        <div class="space"></div> 
+        <div class="space"></div> 
 
 
-				<!-- <h2>時間：11/27（四）18:30, 11/29（六）18:30</h2>
-				<h2>地點：台灣大學新生教學館102教室</h2> -->
-			</div>
-			
-		</div>
-	</section>
-	<section class="slide about" >
-		<div class="block">
-			<div class="wrapper">
-			<div class="describe">
-				<h1 id="resp_head4" data-300-top="opacity: 0.2; left:-100px;" data-100-top="opacity:1;left:0;" class="chi-type">Purpose</h1>
-				<p>
-				臺大校園內有許多對於程式開發、介面設計、設計思考有熱情的學生，我們希望藉由HackNTU的活動，讓 Hacker 精神能夠繼創業家精神成為臺大的精神指標。
-				</p>
-				<p>
-				歡迎各種科系的學生，不再是只有資訊背景的人能夠在此一展長才。不管你是活動咖，超會辦活動和帶high氣氛，或是social咖，手腕超好，能談成許多來頭不小和金額豐厚的贊助。只要是有Hacker spirit，都歡迎你來此一展長才，碰撞不同領域，激發出前所未有的火花。
-				</p>
-			</div>
-			<div class="icon" data-450-top="transform:scale(0);" data-200-top="transform:scale(1)">
-				<img src="images/fire.png" alt="">
-			</div>
-			</div>
-		</div>
-	</section>
-	<section class="slide hackathon">
-		<div class="block">
-			<h1 data-400-top="opacity: 0; left:-100px;" data-150-top="opacity:1;left:0;">What Is Hackthon</h1>
-			<div class="describe" data-450-top="opacity: 0; transform:scale(1.1);" data-300-top="opacity:1; transform:scale(1);">
-				<p>
-					 Hackathon是由寫程式『Hack 』和馬拉松『 Marathon』兩部分組成，Hack 原指解決問題、創意程式設計等意思，而非蓄意破壞、竊取機密文件之意。<br>Hackathon 是國外（知名企業和大學如：Facebook、Yahoo、Evernote、紐約大學、賓州大學等皆有舉辦相關活動）十分流行的創意發想的方式，在活動中人們會放下手邊工作，在輕鬆的環境享受美食，並腦力激盪各種解決問題的創意，透過程式設計和設計師以及問題發想者等合作，在有限時間內完成問題界定、創意發想、作品實作、成果展示，通常活動為一天或連續兩天到一週不等。 
-				</p>
-			</div>
-			<div class="keyboard" data-600-top="top:155%; transform: rotate(10deg);left: -50px;" data-300-top="transform: rotate(0deg); top:100%; left:-10px; opacity: 1;" data-0-top="top:160%; opacity: 0;"></div>
-		</div>
-	</section>
-	<section class="slide dowhat">
-		<div class="wrapper">
-			<h1 data-300-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:0;">Hacker Spirit</h1>
+        <h2 class="chi-type time">第一場說明會：11/27(四) 18:30 @ 活大104</h2>  
+        <h2 class="chi-type time">第二場說明會：11/28(五) 18:30 @ 新生102</h2>
+        <div class="space"></div> 
+          
 
-			<div class="coding" data-500-center-center="transform: rotateY(90deg); transform-origin:0% 0%; opacity: 0; " data--100-center-center="opacity:1; transform: rotateY(0deg); transform-origin:0% 0%; top:0px;" data--300-center-center="top:200px;">
+        <h2 class="chi-type time">Interview Day1：11/29(六)  @二活606/706</h2>
+        <h2 class="chi-type time">Interview Day2：11/30(日) @二活606/706</h2>
+        <!-- <p>請密切注意</p> -->
+        <!-- <h2>時間：11/27（四）18:30, 11/29（六）18:30</h2>
+        <h2>地點：台灣大學新生教學館102教室</h2> -->
+      </div>
+      
+    </div>
+  </section>
+  <section class="slide about" style="background-image: url('images/food.png')">
+    <div class="block">
+      <div class="wrapper">
+      <div class="describe">
+        <h1 id="resp_head4" data-300-top="opacity: 0.2; left:-100px;" data-100-top="opacity:1;left:0;" class="chi-type">Origin</h1>
+        <br>
+        <p>
+        HackNTU是由學生自發性創辦的非營利組織，曾籌辦台灣第一場大型校園Hackathon，目標是成為學術界與產業間的溝通橋樑！我們每年舉辦校園大型Hackathon，創造各路好手交流激盪的機會；每月定期舉辦開發小聚，作為凝聚互助社群的力量；接下來將在2015年初啟動校園社團，作為教授與學習的平台。
+        </p>
+        <p>
+        我們希望未來 Hacker 精神不僅僅流傳於資訊人之間，只要具備這種洞見問題並設法實作解決的精神，歡迎加入我們的行列，一起碰撞各種可能性，相信我們能夠改變世界，創造正面影響力。
+        </p>
+      </div>
+      <div class="icon" data-450-top="transform:scale(0);" data-200-top="transform:scale(1)">
+        <img src="images/fire.png" alt="">
+      </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="slide hackathon" style="background-image: url('images/cream_pixels.png')"> -->
+  <section class="slide hackathon" style="background-image: url('images/gray.png')">
+    <div class="block">
+      <h1 data-400-top="opacity: 0; left:-100px;" data-150-top="opacity:1;left:0;">What Is Hackthon</h1>
+      <div class="describe" data-450-top="opacity: 0; transform:scale(1.1);" data-300-top="opacity:1; transform:scale(1);" style="background-image: url('images/cream_pixels.png')">
+        <p>
+           Hackathon是由寫程式『Hack 』和馬拉松『 Marathon』兩部分組成，Hack 原指解決問題、創意程式設計等意思，而非蓄意破壞、竊取機密文件之意。<br>Hackathon 是國外（知名企業和大學如：Facebook、Yahoo、Evernote、紐約大學、賓州大學等皆有舉辦相關活動）十分流行的創意發想的方式，在活動中人們會放下手邊工作，在輕鬆的環境享受美食，並腦力激盪各種解決問題的創意，透過程式設計和設計師以及問題發想者等合作，在有限時間內完成問題界定、創意發想、作品實作、成果展示，通常活動為一天或連續兩天到一週不等。 
+        </p>
+      </div>
+      <div class="keyboard" data-600-top="top:155%; transform: rotate(10deg);left: -50px;" data-300-top="transform: rotate(0deg); top:100%; left:-10px; opacity: 1;" data-0-top="top:160%; opacity: 0;"></div>
+    </div>
+  </section>
+  <section class="slide dowhat" style="background-image: url('images/pad.png'); background-size: cover; background-repeat: no-repeat;">
+    <div class="wrapper">
+      <h1 data-300-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:0;">Hacker Spirit</h1>
 
-				<h1 id="res_code" class="chi-type left">最短的時間創造最大價值</h1>
-				<img class="icon" src="images/time.png" alt="">
-			</div>
-			<div class="food" data-500-center-center="transform: rotateY(90deg); transform-origin:100% 0%; opacity: 0; " data-0-center-center="opacity:1; transform: rotateY(0deg); transform-origin:100% 0%; top:100px;" data--200-center-center="top:120px;">
+      <div class="coding" data-500-center-center="transform: rotateY(90deg); transform-origin:0% 0%; opacity: 0; " data--100-center-center="opacity:1; transform: rotateY(0deg); transform-origin:0% 0%; top:0px;" data--300-center-center="top:200px;">
 
-				<img class="icon" src="images/solve.png" alt="">
-				<h1 class="chi-type right">自己解決自己發現的問題</h1>
-			</div>
-			<div class="famous" data-500-center-center="transform: rotateY(90deg); transform-origin:0% 0%; opacity: 0; " data-100-center-center="opacity:1; transform: rotateY(0deg); transform-origin:0% 0%; top:50px;" data--100-center-center="top:50px;" >
+        <h1 id="res_code" class="chi-type left">最短的時間創造最大價值</h1>
+        <img class="icon" src="images/time.png" alt="">
+      </div>
+      <div class="food" data-500-center-center="transform: rotateY(90deg); transform-origin:100% 0%; opacity: 0; " data-0-center-center="opacity:1; transform: rotateY(0deg); transform-origin:100% 0%; top:100px;" data--200-center-center="top:120px;">
 
-				<h1 class="chi-type left">開發者黑客精神文化流傳</h1>
-				<img class="icon" src="images/hack.png" alt="">
-			</div>
-		</div>
-	</section>
+        <img class="icon" src="images/solve.png" alt="">
+        <h1 class="chi-type right">自己解決自己發現的問題</h1>
+      </div>
+      <div class="famous" data-500-center-center="transform: rotateY(90deg); transform-origin:0% 0%; opacity: 0; " data-100-center-center="opacity:1; transform: rotateY(0deg); transform-origin:0% 0%; top:50px;" data--100-center-center="top:50px;" >
 
-	<section class="slide staff">
+        <h1 class="chi-type left">開發者黑客精神文化流傳</h1>
+        <img class="icon" src="images/hack.png" alt="">
+      </div>
+    </div>
+  </section>
 
-	<div style="width:1024px; margin: 0 auto;">
-		<h1 data-300-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:0;">STAFF</h1>
-	</div>
-	<div class="container marketing">
-
+  <section class="slide staff">
+  <div style="width:1024px; margin: 0 auto;" >
+    <h1 data-300-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:0;">Team</h1>
+  </div>
       <!-- Three columns of text below the carousel -->
-      <div style="margin:10px" class="row">
-              <div style="text-align:center" class="col-lg-4">
-</div>
-        <div style="text-align:center" class="col-lg-4">
-          <img class="img-circle" src="images/poseidon.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/handsomeposeidon?fref=ts" style="text-decoration:none;color:#FFEF24">侯海琦 Poseidon</a></h2>
-          <h4 style="color:#FFAA00">@Team Player</h4>
-          <p>資管三雜類，左手業務開發，右手軟硬開發。剛從AIESECer轉職Hacker，對於參與或籌辦高強度密度實作開發活動、社群有一腔熱血，最喜歡和一群夥伴出國打比賽做專案並體驗各地不同的文化生活！</p>
-        </div><!-- /.col-lg-4 -->
-                <div style="text-align:center" class="col-lg-4">
-</div>
+         <div style="margin:10px" class="row" >
+              <div style="text-align:center" class="col-lg-4"></div>
+              <div style="text-align:center" class="col-lg-4" >
+                <img class="img-circle" src="images/poseidon.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
+                <h2><a href="https://www.facebook.com/handsomeposeidon?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">侯海琦 Poseidon</a></h2>
+                <h4 style="color:#75422D">Team Player</h4>
+                <p>資管三雜類，左手業務開發，右手軟硬開發。剛從AIESECer轉職Hacker，對於參與或籌辦高強度密度實作開發活動、社群有一腔熱血，最喜歡和一群夥伴出國打比賽做專案並體驗各地不同的文化生活！</p>
+              </div><!-- /.col-lg-4 -->
+              <div style="text-align:center" class="col-lg-4"></div>
+        </div>
 
-	  </div>
-
-	  <div style="margin:10px" class="row">
+    <div style="margin:10px" class="row">
         <div style="text-align:center" class="col-lg-4">
           <img class="img-circle" src="images/clayton.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/profile.php?id=842927021&fref=ts" style="text-decoration:none;color:#FFEF24">趙育誠 Clayton </a></h2>
-          <h4 style="color:#FFAA00">@Cooperative Management</h4>
+          <h2><a href="https://www.facebook.com/profile.php?id=842927021&fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">趙育誠 Clayton </a></h2>
+          <h4 style="color:#75422D">Cooperative Management</h4>
           <p>戲劇加政治大三，對於溝通、交涉、談判、辯論、協調以及任何跟口語表達和人有關的事務有很大的興趣跟熱忱，任何事完全可以說衝就衝。曾經以一個MUNer前往紐約兩次，感受世界有多大，接下來希望能以Hacker的身份跟2015HackNTU的夥伴一起向世界挑戰。</p>
         </div><!-- /.col-lg-4 -->
         <div style="text-align:center" class="col-lg-4">
           <img class="img-circle" src="images/kuan.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/s3355004?fref=ts" style="text-decoration:none;color:#FFEF24">李冠億 Kuan</a></h2>
-          <h4 style="color:#FFAA00">@Financial Management</h4>
+          <h2><a href="https://www.facebook.com/s3355004?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">李冠億 Kuan</a></h2>
+          <h4 style="color:#75422D">Financial Management</h4>
           <p>會計系畢業，擔任GIS Taiwan 2013總召時，見識到跨領域合作的神奇魔力，並對於一群夥伴透過對話、激盪、構思而後大膽行動的無限可能，感到驚豔、驚喜！作為台大校慶和畢業典禮司儀，是大學生活的有趣經驗。目前在內政部地政司服役。</p>
         </div><!-- /.col-lg-4 -->
 
         
       
         <div style="text-align:center" class="col-lg-4">
-          <img class="img-circle puchin" src="images/puchin.png" alt="Generic placeholder image" style="width: 180px; height: 180px;"
-          onmouseover="this.src='images/puchin2.jpg';" onmouseout="this.src='images/puchin.png';">
-          <h2 id="PuChinName" onmouseover="animatePuChin1()" onmouseout="animatePuChin2()"><a href="https://www.facebook.com/profile.php?id=100002146774789" style="text-decoration:none;color:#FFEF24">陳步青 Puchin</a></h2>
-          <h4 style="color:#FFAA00">@Web Development</h4>
-          <p>好久沒寫日記了，今天一邊寫一邊翻開來看看記錄的陳年往事，不論是開心或是悲傷，慶幸自己有把每一段的刻骨銘心保存下來。時間真的很厲害，可以把很多不愉快沖淡。</p>
+          <img class="img-circle puchin" src="images/puchin.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
+          <h2 id="PuChinName"><a href="https://www.facebook.com/profile.php?id=100002146774789" target="_blank" style="text-decoration:none;color:#FFEF24">陳步青 Puchin</a></h2>
+          <h4 style="color:#75422D">Web Development</h4>
+          <p>身為一個碼農，我特別喜歡。重視使用者經驗，以「小步快跑，快速迭代」</p>
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
       <div style="margin:10px" class="row">
 
         <div style="text-align:center" class="col-lg-4">
           <img class="img-circle" src="images/2015hackNTUWilson.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2 id="wilsonName" onmouseover="animateWilson1()" onmouseout="animateWilson2()"><a href="https://www.facebook.com/ji.huang.948" style="text-decoration:none;color:#FFEF24">黃偉軒 Wilson</a></h2>
-          <h4 style="color:#FFAA00">@Digital Marketing</h4>
+          <h2 id="wilsonName"><a href="https://www.facebook.com/ji.huang.948" target="_blank" style="text-decoration:none;color:#FFEF24" onmouseover="animateWilsonStart()" onmouseout="animateWilsonEnd()">黃偉軒 Wilson</a></h2>
+          <h4 style="color:#75422D">Digital Marketing</h4>
           <p>遊歷台成政三間大學，最後落腳於台大資工。妄想成為Iron man，熱愛高科技、分析資料情報、設計、與人交流。擅長觀察使用者，現正在努力成為像樣的UI/UX Designer。喜歡唱歌，調酒，以及說做就做的Hacker spirit</p>
         </div><!-- /.col-lg-4 -->
         <div style="text-align:center" class="col-lg-4">
-          <img class="img-circle" src="images/xiaobun.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;" onmouseover="this.src='images/xiaobun2.jpg';" onmouseout="this.src='images/xiaobun.jpg';">
-          <h2 id="BunName" onmouseover="animateBun1()" onmouseout="animateBun2()"><a href="https://www.facebook.com/profile.php?id=100001968982237" style="text-decoration:none;color:#FFEF24">徐粲翔 Bun</a></h2>
-          <h4 style="color:#FFAA00">@Web Development</h4>
+          <img class="img-circle" src="images/xiaobun.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;">
+          <h2 id="BunName"><a href="https://www.facebook.com/profile.php?id=100001968982237" target="_blank" style="text-decoration:none;color:#FFEF24">徐粲翔 Bun</a></h2>
+          <h4 style="color:#75422D">Web Development</h4>
           <p>台灣人嘴巴真的很賤，什麼鄉民文化根本一堆垃圾，如果是你的朋友現在命危，現在還說的出這些低能話，每次總是一堆人喜歡戰台大，說台大花這麼多錢培育一堆殺人犯，蠢蛋，等等的。</p>
         </div><!-- /.col-lg-4 -->
         <div style="text-align:center" class="col-lg-4">
           <img class="img-circle" src="images/Alex.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/profile.php?id=100001646012981&fref=ts" style="text-decoration:none;color:#FFEF24">高章琛 Alex</a></h2>
-          <h4 style="color:#FFAA00">@School Club</h4>
+          <h2><a href="https://www.facebook.com/profile.php?id=100001646012981&fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">高章琛 Alex</a></h2>
+          <h4 style="color:#75422D">School Club</h4>
           <p>機械大三，熱愛工程機械及各式各樣的事物。對創意充滿了熱情。喜愛社群網路與人互動建立連結。期待能使更多人體會Hacker 精神，使得這個世界發生變化。</p>
         </div><!-- /.col-lg-4 -->
     </div>
@@ -220,21 +217,21 @@
       <div style="margin:20px" class="row">
         <div style="text-align:center" class="col-lg-4">
           <img class="img-circle" src="images/Niu.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/profile.php?id=1669825062&fref=ts" style="text-decoration:none;color:#FFEF24">牛勝雍 Niu</a></h2>
-          <h4 style="color:#FFAA00">@Hackathon Competition</h4>
+          <h2><a href="https://www.facebook.com/profile.php?id=1669825062&fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">牛勝雍 Niu</a></h2>
+          <h4 style="color:#75422D">Hackathon Competition</h4>
           <p>熱愛創意發想及國際跨領域合作，喜愛激發人們動手做、創意構思的過程。曾任AIESEC幹部、汶川災區教學志工、哈佛商學院國際關係論壇等國際組織。致力於推廣生醫領域與工程實</p>
         </div><!-- /.col-lg-4 -->
         <div style="text-align:center" class="col-lg-4">
           <img class="img-circle" src="images/eric.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/s3355004?fref=ts" style="text-decoration:none;color:#FFEF24">辛爾康 Eric</a></h2>
-          <h4 style="color:#FFAA00">@Brand Design</h4>
+          <h2><a href="https://www.facebook.com/s3355004?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">辛爾康 Eric</a></h2>
+          <h4 style="color:#75422D">Brand Design</h4>
           <p>電機三外加雙主修到快變正科的哲學，同時也在藝術設計學程開心玩耍中；因為想同時兼顧興趣和主科，衝了很多活動做了很多職務，兩年下來一直以為自己過得是不健康的爆肝生活，最近才發現原來只是熊熊燃燒的熱血Hacker魂。喜歡康德和克理斯多福諾蘭的電影。</p>
                   </div><!-- /.col-lg-4 -->
 
-      	<div style="text-align:center" class="col-lg-4">
+        <div style="text-align:center" class="col-lg-4">
           <img class="img-circle" src="images/ping-min.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/pingmin?fref=ts" style="text-decoration:none;color:#FFEF24">林秉民 Ping-Min</a></h2>
-          <h4 style="color:#FFAA00">@Training Gathering</h4>
+          <h2><a href="https://www.facebook.com/pingmin?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">林秉民 Ping-Min</a></h2>
+          <h4 style="color:#75422D">Training Gathering</h4>
           <p>電機系大三，雙主修財金，曾試圖用經濟學解釋電子學，對程式有莫名奇妙的熱情。廣泛涉獵不同領域，並持續嘗試將它們系統性的整合。喜歡動手解決問題，希望能讓更多人了解Hacker Spirit，一起讓世界變得更好。</p>
         </div><!-- /.col-lg-4 -->
 
@@ -242,102 +239,18 @@
       </div><!-- /.row -->
 
       </div>
-        
-	
-			
-			<!-- <div class="person">
-				<img src="images/poseidon.png" alt="">
-				<div class="information">
-					<a class="name" href="https://www.facebook.com/handsomeposeidon?fref=ts">侯海琦 Poseidon</a>
-					<a>@Team Player</a>
-					<p>資管三雜類，左手業務開發，右手軟硬開發。剛從AIESECer轉職Hacker，對於參與或籌辦高強度密度實作開發活動、社群有一腔熱血，最喜歡和一群夥伴出國打比賽做專案並體驗各地不同的文化生活！</p>
-				</div>
-			</div>
-			<div class="person">
-				<img src="images/clayton.png" alt="">
-				<div class="information">
-					<a class="name" href="https://www.facebook.com/profile.php?id=842927021&fref=ts">趙育誠 Clayton</a>
-					<a href="">@Cooperative Management</a>
-					<p>戲劇加政治大三，對於溝通、交涉、談判、辯論、協調以及任何跟口語表達和人有關的事務有很大的興趣跟熱忱，任何事完全可以說衝就衝。曾經以一個MUNer前往紐約兩次，感受世界有多大，接下來希望能以Hacker的身份跟2015HackNTU的夥伴一起向世界挑戰。</p>
-				</div>
-			</div>
-			<div class="person">
-				<img src="images/kuan.png" alt="">
-				<div class="information">
-					<a class="name" href="https://www.facebook.com/s3355004?fref=ts">李冠億 Kuan</a>
-					<a href="">@Financial Management</a>
-					<p>會計系畢業，擔任GIS Taiwan 2013總召時，見識到跨領域合作的神奇魔力，並對於一群夥伴透過對話、激盪、構思而後大膽行動的無限可能，感到驚豔、驚喜！作為台大校慶和畢業典禮司儀，是大學生活的有趣經驗。目前在內政部地政司服役。</p>
-				</div>
-			</div>
-			<div class="person">
-				<img src="images/Alex.png" alt="">
-				<div class="information">
-					<a class="name" href="https://www.facebook.com/profile.php?id=100001646012981&fref=ts">高章琛 Alex</a>
-					<a href="">@School Club</a>
-					<p>機械大三，熱愛工程機械及各式各樣的事物。對創意充滿了熱情。喜愛社群網路與人互動建立連結。期待能使更多人體會Hacker 精神，使得這個世界發生變化。</p>
-				</div>
-			</div>
-			<div class="person">
-				<img src="images/Niu.png" alt="">
-				<div class="information">
-					<a class="name" href="https://www.facebook.com/profile.php?id=1669825062&fref=ts">牛勝雍 Niu</a>
-					<a href="">@Hackathon Competition</a>
-					<p>熱愛創意發想及國際跨領域合作，喜愛激發人們動手做、創意構思的過程。曾任AIESEC幹部、汶川災區教學志工、哈佛商學院國際關係論壇等國際組織。致力於推廣生醫領域與工程實</p>
-				</div>
-			</div>
-			<div class="person">
-				<img src="images/puchin.png" alt="">
-				<div class="information">
-					<a class="name" href="https://www.facebook.com/profile.php?id=100002146774789">陳步青 Puchin</a>
-					<a href="">@Web Development</a>
-					<p>好久沒寫日記了，今天一邊寫一邊翻開來看看記錄的陳年往事，不論是開心或是悲傷，慶幸自己有把每一段的刻骨銘心保存下來。時間真的很厲害，可以把很多不愉快沖淡。</p>
-				</div>
-			</div>
-			<div class="person">
-				<img src="images/2015hackNTUWilson.png" alt="">
-				<div class="information">
-					<a class="name" href="https://www.facebook.com/ji.huang.948">黃偉軒 Wilson</a>
-					<a href="http://jiduanyaoji.blogspot.tw/">@Digital Marketing</a>
-					<p>遊歷台成政三間大學，最後落腳於台大資工。妄想成為Iron man，熱愛高科技、分析資料情報、設計、與人交流。擅長觀察使用者，現正在努力成為像樣的UI/UX Designer。喜歡唱歌，調酒，以及說做就做的Hacker spirit</p>
-				</div>
-			</div>
-			<div class="person">
-				<img src="images/xiaobun.jpg" alt="">
-				<div class="information">
-					<a class="name" href="https://www.facebook.com/profile.php?id=100001968982237">徐粲翔 Bun</a>
-					<a href="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfp1/t31.0-8/1495972_807510362607830_75737766_o.jpg">@Web Development</a>
-					<p>台灣人嘴巴真的很賤，什麼鄉民文化根本一堆垃圾，如果是你的朋友現在命危，現在還說的出這些低能話，每次總是一堆人喜歡戰台大，說台大花這麼多錢培育一堆殺人犯，蠢蛋，等等的</p>
-				</div>
-			</div>
-			<div class="person">
-				<img src="images/eric.png" alt="">
-				<div class="information">
-					<a class="name" href="https://www.facebook.com/uniericuni?fref=ts">辛爾康 Eric</a>
-					<a>@Brand Design</a>
-					<p>電機三外加雙主修到快變正科的哲學，同時也在藝術設計學程開心玩耍中；因為想同時兼顧興趣和主科，衝了很多活動做了很多職務，兩年下來一直以為自己過得是不健康的爆肝生活，最近才發現原來只是熊熊燃燒的熱血Hacker魂。喜歡康德和克理斯多福諾蘭的電影。</p>
-				</div>
-			</div>
-			
-			<div class="person">
-				<img src="images/ping-min.png" alt="">
-				<div class="information">
-					<a class="name" href="https://www.facebook.com/pingmin?fref=ts">林秉民 Ping-Min</a>
-					<a>@Training Gathering</a>
-					<p>電機系大三，雙主修財金，曾試圖用經濟學解釋電子學，對程式有莫名奇妙的熱情。廣泛涉獵不同領域，並持續嘗試將它們系統性的整合。喜歡動手解決問題，希望能讓更多人了解Hacker Spirit，一起讓世界變得更好。</p>
-				</div>
-			</div> -->
 
 
-	</section>
-	<footer>
-		<div>
-			<h2>Contact us</h2>
-			<a href="https://www.facebook.com/events/312058285645634/?notif_t=plan_user_invited" target="_blank">活動專頁</a>
-			<span> | </span>
-			<a href="https://www.facebook.com/hackNTU" target="_blank">粉絲專頁</a>
-		</div>
-		<a class="author" href="hackntu@gmail.com">hackntu@gmail.com</a>
-	</footer>
+  </section>
+  <footer>
+    <div>
+      <h2>Contact Us</h2>
+      <a href="https://www.facebook.com/events/312058285645634/?notif_t=plan_user_invited" target="_blank" style="margin-left: 3px;">活動專頁</a>
+      <span> | </span>
+      <a href="https://www.facebook.com/hackNTU" target="_blank">粉絲專頁</a>
+    </div>
+    <a class="author" href="hackntu@gmail.com">hackntu@gmail.com</a>
+  </footer>
 </body>
 <script src="./javascripts/jquery-1.8.3.js"></script>
 <script src="./javascripts/jquery.fittext.js"></script>
@@ -350,22 +263,22 @@
   $("#res_code").fitText(1.1);
 </script>
 <script>
-	function resizePages() {
-		var h = $(window).height();
-		var height = h < 600 ? 600 : h;
-		$('section').css('height',height);
-		$('.dowhat').css('height',height*2);
-		$('.staff').removeAttr('style');
-	}
-	resizePages();
-	var sk = skrollr.init({forceHeight:false});
+  function resizePages() {
+    var h = $(window).height();
+    var height = h < 600 ? 600 : h;
+    $('section').css('height',height);
+    $('.dowhat').css('height',height*1.5);
+    $('.staff').removeAttr('style');
+  }
+  resizePages();
+  var sk = skrollr.init({forceHeight:false});
 
-	$(function(){
-		$(window).resize(function(e) {
-			resizePages();
-			sk.refresh();
-		});
-	});
+  $(function(){
+    $(window).resize(function(e) {
+      resizePages();
+      sk.refresh();
+    });
+  });
 </script>
 <script>
 
