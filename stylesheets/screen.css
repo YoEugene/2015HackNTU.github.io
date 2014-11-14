@@ -511,7 +511,7 @@ p {
   margin: 0 auto;
   max-width: 800px;
   width: 60%;
-  text-shadow: -4px 4px #000000;
+  /*text-shadow: -4px 4px #000000;*/
   text-align: center;
   line-height: 2em;
   color: #FFFFFF;
@@ -1136,6 +1136,13 @@ ul.arrow li {
   margin: 1em 0 0.8em;
 }
 
+/*.staff .col-lg-4{
+  width: 400px;
+}
+
+.staff .col-xs-6{
+  width: 400px;
+}*/
 
 /* line 641, ../sass/screen.scss */
 .staff .person {
