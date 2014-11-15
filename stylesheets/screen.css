@@ -475,8 +475,13 @@ div#preload { display: none; }
   max-width: 600px;
   width: 40%;
 }
+
+.intro .title .seperate {
+  
+}
+
 .intro .title a:hover {
-  text-shadow: -8px 8px #000000;
+  /*text-shadow: -8px 8px #000000;*/
   text-decoration: none;
 }
 
@@ -1250,4 +1255,18 @@ footer a.author {
     }
 .puchin a:hover {
     background: url("/images/puchin2.jpg"); /*滑鼠移過顯示圖片*/
+}
+
+.nav li{
+  background-color: rgba(255,255,255,0.2);
+}
+.nav li a{
+  color: white;
+}
+.nav-active {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.nav a{
+  font-size:1.25em;
 }
