@@ -301,15 +301,27 @@
   });
 </script>
 <script>
-  $('.title').hide();
-  $('.left-time').hide();
-  $('.right-time').hide();
+  $('body').hide();
+  // $('.title').hide();
+  // $('.left-time').hide();
+  // $('.right-time').hide();
   $(window).load(function() {
     // this will fire after the entire page is loaded, including images
+    $('body').show();
     $('.title').show().addClass('animated bounceInUp');
     $('.left-time').show().addClass('animated bounceInLeft');  
     $('.right-time').show().addClass('animated bounceInRight'); 
   });
+
+  // $(function() {
+  //   $('.bg').one('load',function() {
+  //       // fire when image loads
+  //     alert('sdf');
+  //     $('.title').show().addClass('animated bounceInUp');
+  //     $('.left-time').show().addClass('animated bounceInLeft');  
+  //     $('.right-time').show().addClass('animated bounceInRight'); 
+  //   });
+  // });
 
   // hover on title and then enter FB event page
   $('.title').on('hover', function() {
@@ -317,11 +329,6 @@
         $(this).removeClass('pulse');
     });
   });
-
-  $('.puchin').on('hover', function() {
-
-  });
-
 
 </script>
 <script>
