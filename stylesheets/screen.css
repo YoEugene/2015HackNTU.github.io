@@ -1135,7 +1135,7 @@ ul.arrow li {
 .staff {
   position: relative;
   /*background: #72541E;*/
-  background-image: url('../images/bedge.png');
+  background-image: url('../images/natural_paper.png');
   color: #fff;
 }
 /* line 638, ../sass/screen.scss */
@@ -1265,6 +1265,14 @@ footer a.author {
 }
 .nav-active {
   background-color: rgba(255,255,255,0.5);
+}
+
+.nav-active2 {
+  background-color: rgba(235,113,17,0.6);
+}
+
+.nav-active3 {
+  background-color: rgba(98, 50, 32, 0.6);
 }
 
 .nav a{
