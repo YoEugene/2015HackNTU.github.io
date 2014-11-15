@@ -20,6 +20,12 @@
   <title>2015HackNTU</title>
   <!--[if IE]> <script type="text/javascript" src="./javascripts/fucking-IE.js"></script> <![endif]-->
   <script>
+  	function animateWilsonStart(){
+      $('#wilsonName').addClass('animated flash');
+    }
+    function animateWilsonEnd(){
+      $('#wilsonName').removeClass('animated flash');
+    }
     function getIEVersion(){
         var agent = navigator.userAgent;
         var reg = /MSIE\s?(\d+)(?:\.(\d+))?/i;
@@ -64,7 +70,7 @@
       <div class="title" data-0="top:0px;" data-150="top:120px;">
         <a href="https://www.facebook.com/events/312058285645634/?notif_t=plan_user_invited" target="_blank">
           <h1 id="resp_head1">2015HackNTU</h1>
-          <h2 id="resp_head2">活動籌備團隊招募</h2>
+          <h2 id="resp_head2">籌備團隊招募</h2>
         </a>
       </div>
       <div class="logo" data-100="opacity: 0.7; top: 12px;" data-400="opacity: 0; top:-50px;">
