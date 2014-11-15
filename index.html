@@ -59,7 +59,7 @@
     </a></li>
   </nav>
   <section id="intro" class="slide intro">
-    <div class="bg" style="position: fixed; width: 100%; height: 100%; background-image: url('images/background1_Fotor3_500K.jpg'); background-size: cover; background-repeat: no-repeat; background-position: top center; z-index: 0"></div>
+    <div class="bg" style="position: fixed; width: 100%; height: 100%; background-image: url('images/background1_Fotor3.jpg'); background-size: cover; background-repeat: no-repeat; background-position: top center; z-index: 0"></div>
     <div class="block">
       <div class="title" data-0="top:0px;" data-150="top:120px;">
         <a href="https://www.facebook.com/events/312058285645634/?notif_t=plan_user_invited" target="_blank">
@@ -147,7 +147,7 @@
 
   <section id="staff" class="slide staff">
     <div style="width:1024px; margin: 0 auto;" >
-      <h1 data-300-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:0;">Staff</h1>
+      <h1 data-800-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:100px;">Staff</h1>
     </div>
       <!-- Three columns of text below the carousel -->
       <div style="width:1024px; margin: 0 auto;">
@@ -305,7 +305,7 @@
 
   $("#resp_head2").fitText(0.9);
   $("#resp_head3").fitText(1.04);
-  $("#resp_head4").fitText(0.6);
+  $("#resp_head4").fitText(0.7);
   $("#res_code").fitText(1.1);
 </script>
 <script>
@@ -327,10 +327,28 @@
   });
 </script>
 <script>
-  // initial animation
-  $('.title').addClass('animated bounceInUp');
-  $('.left-time').addClass('animated bounceInLeft');  
-  $('.right-time').addClass('animated bounceInRight');  
+  $('body').hide();
+  // $('.title').hide();
+  // $('.left-time').hide();
+  // $('.right-time').hide();
+  $(window).load(function() {
+    // this will fire after the entire page is loaded, including images
+    $('#intro').show();
+    $('.title').show().addClass('animated bounceInUp');
+    $('.left-time').show().addClass('animated bounceInLeft');  
+    $('.right-time').show().addClass('animated bounceInRight'); 
+    $('body').show();
+  });
+
+  // $(function() {
+  //   $('.bg').one('load',function() {
+  //       // fire when image loads
+  //     alert('sdf');
+  //     $('.title').show().addClass('animated bounceInUp');
+  //     $('.left-time').show().addClass('animated bounceInLeft');  
+  //     $('.right-time').show().addClass('animated bounceInRight'); 
+  //   });
+  // });
 
   // hover on title and then enter FB event page
   $('.title').on('hover', function() {
@@ -338,11 +356,6 @@
         $(this).removeClass('pulse');
     });
   });
-
-  $('.puchin').on('hover', function() {
-
-  });
-
 
 </script>
 <script>
