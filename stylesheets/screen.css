@@ -762,15 +762,15 @@ ul.arrow li {
 .about .describe {
   display: inline-block;
   position: relative;
-  margin: 10% 10% 10% 0%;
-  width: 40%;
+  margin: 1% 5% 1% 0%;
+  width: 50%;
   min-width: 360px;
 }
 /* line 332, ../sass/screen.scss */
 .about .icon {
   display: inline-block;
   position: relative;
-  top: -120px;
+  top: -150px;
   width: 320px;
   height: 320px;
   border-radius: 50%;
@@ -786,8 +786,8 @@ ul.arrow li {
 }
 /* line 348, ../sass/screen.scss */
 .about .wrapper {
-  width: 800px;
-  margin: 0 auto;
+  width: 950px;
+  margin: 0 auto 0 10%;
 }
 
 @-webkit-keyframes flame {
