@@ -21,6 +21,12 @@
   <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <title>2015HackNTU</title>
   <!--[if IE]> <script type="text/javascript" src="./javascripts/fucking-IE.js"></script> <![endif]-->
+
+  <script src="./javascripts/jquery-1.8.3.js"></script>
+  <script src="./javascripts/jquery.fittext.js"></script>
+  <script src="./javascripts/skrollr.min.js"></script>
+  <script src="./javascripts/skrollr.menu.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.preload.min.js"></script>
   <script>
   	function animateWilsonStart(){
       $('#wilsonName').addClass('animated flash');
@@ -308,11 +314,7 @@
      <img src="images/bedge.png" width="1" height="1" alt=""/>
   </div>
 </body>
-<script src="./javascripts/jquery-1.8.3.js"></script>
-<script src="./javascripts/jquery.fittext.js"></script>
-<script src="./javascripts/skrollr.min.js"></script>
-<script src="./javascripts/skrollr.menu.min.js"></script>
-<script type="text/javascript" src="javascripts/jquery.preload.js"></script>
+
 <script>
   $("#resp_head1").fitText(0.6);
 
@@ -349,13 +351,14 @@
   // $('.right-time').hide();
   // $(window).load(function() {
     // this will fire after the entire page is loaded, including images
-    $('#intro').show();
-    $('.title').show().addClass('animated bounceInUp');
-    $('.left-time').show().addClass('animated bounceInLeft');  
-    $('.right-time').show().addClass('animated bounceInRight'); 
-    $('body').show();
   // });
-
+    $('#intro').preload(function(){
+      $('#intro').show();
+      $('.title').show().addClass('animated bounceInUp');
+      $('.left-time').show().addClass('animated bounceInLeft');  
+      $('.right-time').show().addClass('animated bounceInRight'); 
+    });
+  $('body').show();
   // $(function() {
   //   $('.bg').one('load',function() {
   //       // fire when image loads
