@@ -14,12 +14,11 @@
 
  <!--  <link rel="stylesheet" href="./stylesheets/demo.css">
   <link rel="stylesheet" href="./stylesheets/avgrund.css"> -->
-  <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="./favicon.ico"/>
   <link href="./stylesheets/print.css" rel="stylesheet" type="text/css" />
   <link href="./stylesheets/animate.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">  
-
+  <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <title>2015HackNTU</title>
   <!--[if IE]> <script type="text/javascript" src="./javascripts/fucking-IE.js"></script> <![endif]-->
   <script>
@@ -52,21 +51,22 @@
 </head>
 
 <body>
-
-  <nav class="nav sidenav" style="width:200px;z-index:999;position:fixed;left:10px;" data-300="opacity:0;top:-100px;" data-500="opacity: 1;top: 20px;" data-4700="opacity:1;top: 20px;" data-5500="opacity:0;">
-    <li><a href="#about" data-anchor-target="#about" data-40-top-top="@class:nav-active" data-40-top-bottom="@class:nav-active" data-edge-strategy="reset">
-      About
-    </a></li>
-    <li><a href="#hackathon" data-anchor-target="#hackathon" data-40-top-top="@class:nav-active" data-40-top-bottom="@class:nav-active" data-edge-strategy="reset">
-      What is Hackathon?
-    </a></li>
-    <li><a href="#staff" data-anchor-target="#staff" data-40-top-top="@class:nav-active" data-40-top-bottom="@class:nav-active" data-edge-strategy="reset">
-      Who we are?
-    </a></li>
-    <li><a href="#qa" data-anchor-target="#qa" data-40-top-top="@class:nav-active" data-40-top-bottom="@class:nav-active" data-edge-strategy="reset">
-      Q&A
-    </a></li>
-  </nav>
+  <div class="sidenav-wrapper" style="width:200px;z-index:999;position:fixed;left:10px;top:0px;" >
+    <nav class="nav sidenav" style="position:fixed;" data-300="opacity:0;top:-100px;" data-500="opacity: 1;top: 20px;" data-4700="opacity:1;top: 20px;" data-5500="opacity:0;">
+      <li><a href="#about" data-anchor-target="#about" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">
+        About
+      </a></li>
+      <li><a href="#hackathon" data-anchor-target="#hackathon" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">
+        What is Hackathon?
+      </a></li>
+      <li><a href="#staff" data-anchor-target="#staff" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">
+        Who we are?
+      </a></li>
+      <li><a href="#qa" data-anchor-target="#qa" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">
+        Q&A
+      </a></li>
+    </nav>
+  </div>
   <section id="intro" class="slide intro">
     <div class="bg" style="position: fixed; width: 100%; height: 100%; background-image: url('images/homepage.png'); background-size: cover; background-repeat: no-repeat; background-position: top center; z-index: 0"></div>
     <div class="block">
@@ -271,7 +271,7 @@
 
 
 		    <div style="text-align:center; height: 300px;" class="col-sm-6">
-          <h2 style="color:#F9F900">四次我剛好都在國外，怎麼辦？</h2>
+          <h2 style="color:#F9F900">四天我剛好都在國外，怎麼辦？</h2>
           <p>如果你的對本次活動實在很有興趣，但有以上困難或是其他疑問的話，歡迎<a style="text-decoration:none; color:#EB7111;" href="mailto:hackntu@gmail.com">來信</a>通知，我們都很樂意和您討論。但還是強烈建議參加說明會，才不會漏掉完整的資訊以及認識各路好手的機會！</p>
         </div>
 
@@ -354,6 +354,7 @@
     $('.left-time').show().addClass('animated bounceInLeft');  
     $('.right-time').show().addClass('animated bounceInRight'); 
     $('body').show();
+
   });
 
   // $(function() {
@@ -372,7 +373,9 @@
         $(this).removeClass('pulse');
     });
   });
-
+  $('.sidenav-wrapper').on("mouseenter mouseleave",function(){
+    $(this).toggleClass('sidenav-wrapper-hover');
+    });
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
