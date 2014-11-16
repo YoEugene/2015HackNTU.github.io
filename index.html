@@ -353,10 +353,13 @@
     // this will fire after the entire page is loaded, including images
   // });
     $('#intro').preload(function(){
-      $('#intro').show();
-      $('.title').show().addClass('animated bounceInUp');
-      $('.left-time').show().addClass('animated bounceInLeft');  
-      $('.right-time').show().addClass('animated bounceInRight'); 
+      var t = setTimeout(function(){
+        $('#intro').show();
+        $('.title').show().addClass('animated bounceInUp');
+        $('.left-time').show().addClass('animated bounceInLeft');  
+        $('.right-time').show().addClass('animated bounceInRight'); 
+        },500
+      );
     });
   $('body').show();
   // $(function() {
