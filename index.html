@@ -5,11 +5,7 @@
   <meta name="author" content="2015HackNTU">
   <meta property="og:title" content="2015 HackNTU 工作團隊招募"> 
   <meta property="og:type" content="website" /> 
-<<<<<<< HEAD
-  <meta property="og:url" content="http://2015HackNTU.github.io" /> 
-=======
   <meta property="og:url" content="http://2015hackntu.github.io" /> 
->>>>>>> 19204fd683af2dcc1d925e7274157a283f92caee
   <meta property="og:site_name" content="HackNTU" /> 
   <meta name="robots" content="noindex" /> 
   <meta property="og:image" content="http://i.imgur.com/jwOHhqi.jpg" /> 
@@ -25,6 +21,12 @@
   <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <title>2015HackNTU</title>
   <!--[if IE]> <script type="text/javascript" src="./javascripts/fucking-IE.js"></script> <![endif]-->
+
+  <script src="./javascripts/jquery-1.8.3.js"></script>
+  <script src="./javascripts/jquery.fittext.js"></script>
+  <script src="./javascripts/skrollr.min.js"></script>
+  <script src="./javascripts/skrollr.menu.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.preload.js"></script>
   <script>
   	function animateWilsonStart(){
       $('#wilsonName').addClass('animated flash');
@@ -312,11 +314,7 @@
      <img src="images/bedge.png" width="1" height="1" alt=""/>
   </div>
 </body>
-<script src="./javascripts/jquery-1.8.3.js"></script>
-<script src="./javascripts/jquery.fittext.js"></script>
-<script src="./javascripts/skrollr.min.js"></script>
-<script src="./javascripts/skrollr.menu.min.js"></script>
-<script type="text/javascript" src="javascripts/jquery.preload.js"></script>
+
 <script>
   $("#resp_head1").fitText(0.6);
 
@@ -353,11 +351,15 @@
   // $('.right-time').hide();
   // $(window).load(function() {
     // this will fire after the entire page is loaded, including images
-    $('#intro').show();
-    $('.title').show().addClass('animated bounceInUp');
-    $('.left-time').show().addClass('animated bounceInLeft');  
-    $('.right-time').show().addClass('animated bounceInRight'); 
-    $('body').show();
+    $('#intro').preload(function(){
+      $('#intro').show();
+      $('.title').show().addClass('animated bounceInUp');
+      $('.left-time').show().addClass('animated bounceInLeft');  
+      $('.right-time').show().addClass('animated bounceInRight');
+      $('body').show();
+    })
+    
+    
   // });
 
   // $(function() {
