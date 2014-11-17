@@ -1300,6 +1300,13 @@ footer a.author {
 
 .division-item{
   text-align: center;
+  background-color: rgba(0,0,0,0.1);
+}
+.division-item h2{
+  color:#75422D;  
+}
+.director-container{
+
 }
 .director-info{
   position: absolute;
