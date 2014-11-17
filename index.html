@@ -48,6 +48,17 @@
     if(is_ie10)
       hackir();
   </script>
+
+<script src="javascripts/jail.js"></script>
+<script>
+    $(function(){
+        $('img').jail({
+            callback : (function(){alert("All the images are loaded");}),
+            callbackAfterEachImage : function() {alert("one image is loaded");}
+        });
+    });
+</script>
+
 </head>
 
 <body>
@@ -159,18 +170,21 @@
       <h1 data-800-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:100px;">Staff</h1>
     </div>
       <!-- Three columns of text below the carousel -->
-      <div style="width:1024px; margin: 0 auto;">
-         <div style="margin:0 auto;" class="row" >
-              <div style="text-align:center" class="col-sm-4 col-sm-offset-4">
-                <img class="img-circle" src="images/poseidon.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-                <h2><a href="https://www.facebook.com/handsomeposeidon?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">侯海琦 Poseidon</a></h2>
-                <h4 style="color:#75422D">Team Player</h4>
-                <p>上天賦予了AS亞斯伯格症與ADHD注意力不足過動症兩項技能，造就現在喜歡動口開拓業務、動手開發軟硬體、動腳開闢疆土的我，缺點是靜不下來、睡不太著、喜愛整人。剛從邪教AIESECer回歸正派Hacker，夢想是一個說衝就衝的團隊與一項挑戰世界的發明！</p>
-              </div>
-        </div>
+      <!-- <div style="width:1024px; margin: 0 auto;"> -->
+         <!-- <div style="margin:0 auto;" class="row" > -->
+             
+        <!-- </div> -->
 
     <div style="margin:10px">
       <div class="row">
+        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
+       <!-- <div style="text-align:center" class="col-sm-4 col-sm-offset-4"> -->
+          <img class="img-circle" src="images/poseidon.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
+          <h2><a href="https://www.facebook.com/handsomeposeidon?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">侯海琦 Poseidon</a></h2>
+          <h4 style="color:#75422D">Team Player</h4>
+          <p>上天賦予了AS亞斯伯格症與ADHD注意力不足過動症兩項技能，造就現在喜歡動口開拓業務、動手開發軟硬體、動腳開闢疆土的我，缺點是靜不下來、睡不太著、喜愛整人。剛從邪教AIESECer回歸正派Hacker，夢想是一個說衝就衝的團隊與一項挑戰世界的發明！</p>
+        </div>
+
         <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
           <img class="img-circle" src="images/clayton6.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
           <h2><a href="https://www.facebook.com/profile.php?id=842927021&fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">趙育誠 Clayton </a></h2>
@@ -185,12 +199,12 @@
           <p>會計系畢業，擔任GIS Taiwan 2013總召時，見識到跨領域合作的神奇魔力，並對於一群夥伴透過對話、激盪、構思而後大膽行動的無限可能，感到驚豔、驚喜！作為台大校慶和畢業典禮司儀，是大學生活的有趣經驗。目前在內政部地政司服役。</p>
         </div>
 
-         <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
+<!--          <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
           <img class="img-circle" src="images/xiaobun.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;">
           <h2 id="BunName"><a href="https://www.facebook.com/profile.php?id=100001968982237" target="_blank" style="text-decoration:none;color:#FFEF24">徐粲翔 Bun</a></h2>
           <h4 style="color:#75422D">Web Development</h4>
           <p>現台大資工四，前熱舞社教學，平常對於Web前端與Andriod頗有研究，今年暑假在EZTable擔任F2E Intern。喜歡新潮技術，也喜歡跳舞，綽號台大小巨人的我喜歡喝牛奶。</p>
-        </div><!-- /.col-lg-4 -->
+        </div> -->
 
       </div>
       <div class="row">
@@ -315,7 +329,6 @@
 <script type="text/javascript" src="javascripts/jquery.preload.js"></script>
 <script>
   $("#resp_head1").fitText(0.6);
-
   $("#resp_head2").fitText(0.9);
   $("#resp_head3").fitText(1.04);
   $("#resp_head4").fitText(0.7);
@@ -323,6 +336,7 @@
 </script>
 <!-- <script type="text/javascript" src="./javascripts/avgrund.js"></script> -->
 <!-- <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> -->
+
 
 <script>
   function resizePages() {
@@ -342,29 +356,21 @@
     });
   });
 </script>
+
+
+
 <script>
+
   $('body').hide();
-  // $('.title').hide();
-  // $('.left-time').hide();
-  // $('.right-time').hide();
-  // $(window).load(function() {
+  $(window).load(function() {
     // this will fire after the entire page is loaded, including images
     $('#intro').show();
     $('.title').show().addClass('animated bounceInUp');
     $('.left-time').show().addClass('animated bounceInLeft');  
     $('.right-time').show().addClass('animated bounceInRight'); 
     $('body').show();
-  // });
+  });
 
-  // $(function() {
-  //   $('.bg').one('load',function() {
-  //       // fire when image loads
-  //     alert('sdf');
-  //     $('.title').show().addClass('animated bounceInUp');
-  //     $('.left-time').show().addClass('animated bounceInLeft');  
-  //     $('.right-time').show().addClass('animated bounceInRight'); 
-  //   });
-  // });
 
   // hover on title and then enter FB event page
   $('.title').on('hover', function() {
