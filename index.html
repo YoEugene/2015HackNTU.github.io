@@ -54,6 +54,17 @@
     if(is_ie10)
       hackir();
   </script>
+
+<script src="javascripts/jail.js"></script>
+<script>
+    $(function(){
+        $('img').jail({
+            callback : (function(){alert("All the images are loaded");}),
+            callbackAfterEachImage : function() {alert("one image is loaded");}
+        });
+    });
+</script>
+
 </head>
 
 <body>
@@ -277,98 +288,6 @@
     </div>
     </div>
   </section>
-
-  <!-- <section id="staff" class="slide staff">
-    <div style="width:1024px; margin: 0 auto;" >
-      <h1 data-800-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:100px;">Staff</h1>
-    </div>
-      <!-- Three columns of text below the carousel 
-      <div style="width:1024px; margin: 0 auto;">
-         <div style="margin:0 auto;" class="row" >
-              <div style="text-align:center" class="col-sm-4 col-sm-offset-4">
-                <img class="img-circle" src="images/poseidon.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-                <h2><a href="https://www.facebook.com/handsomeposeidon?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">侯海琦 Poseidon</a></h2>
-                <h4 style="color:#75422D">Team Player</h4>
-                <p>上天賦予了AS亞斯伯格症與ADHD注意力不足過動症兩項技能，造就現在喜歡動口開拓業務、動手開發軟硬體、動腳開闢疆土的我，缺點是靜不下來、睡不太著、喜愛整人。剛從邪教AIESECer回歸正派Hacker，夢想是一個說衝就衝的團隊與一項挑戰世界的發明！</p>
-              </div>
-        </div>
-
-    <div style="margin:10px">
-      <div class="row">
-        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
-          <img class="img-circle" src="images/clayton6.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/profile.php?id=842927021&fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">趙育誠 Clayton </a></h2>
-          <h4 style="color:#75422D">Cooperative Management</h4>
-          <p>戲劇加政治大三，對於溝通、交涉、談判、辯論、協調以及任何跟口語表達和人有關的事務有很大的興趣跟熱忱，任何事完全可以說衝就衝。曾經以一個MUNer前往紐約兩次，感受世界有多大，接下來希望能以Hacker的身份跟2015HackNTU的夥伴一起向世界挑戰。</p>
-        </div>
-       
-        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
-          <img class="img-circle" src="images/kuan.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/s3355004?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">李冠億 Kuan</a></h2>
-          <h4 style="color:#75422D">Financial Management</h4>
-          <p>會計系畢業，擔任GIS Taiwan 2013總召時，見識到跨領域合作的神奇魔力，並對於一群夥伴透過對話、激盪、構思而後大膽行動的無限可能，感到驚豔、驚喜！作為台大校慶和畢業典禮司儀，是大學生活的有趣經驗。目前在內政部地政司服役。</p>
-        </div>
-
-         <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
-          <img class="img-circle" src="images/xiaobun.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2 id="BunName"><a href="https://www.facebook.com/profile.php?id=100001968982237" target="_blank" style="text-decoration:none;color:#FFEF24">徐粲翔 Bun</a></h2>
-          <h4 style="color:#75422D">Web Development</h4>
-          <p>現台大資工四，前熱舞社教學，平常對於Web前端與Andriod頗有研究，今年暑假在EZTable擔任F2E Intern。喜歡新潮技術，也喜歡跳舞，綽號台大小巨人的我喜歡喝牛奶。</p>
-        </div><!-- /.col-lg-4 -->
-
-      </div>
-      <div class="row">
-        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
-          <img class="img-circle" src="images/2015hackNTUWilson.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2 id="wilsonName"><a href="https://www.facebook.com/ji.huang.948" target="_blank" style="text-decoration:none;color:#FFEF24" onmouseover="animateWilsonStart()" onmouseout="animateWilsonEnd()">黃偉軒 Wilson</a></h2>
-          <h4 style="color:#75422D">Digital Marketing</h4>
-          <p>遊歷台成政三間大學，最後落腳於台大資工。妄想成為Iron man，熱愛高科技、分析資料情報、設計、與人交流。擅長觀察使用者，現正在努力成為像樣的UI/UX Designer。喜歡唱歌，看電影，以及說做就做的Hacker spirit</p>
-        </div>
-        
-        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
-          <img class="img-circle" src="images/eric.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/uniericuni?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">辛爾康 Eric</a></h2>
-          <h4 style="color:#75422D">Brand Design</h4>
-          <p>電機三外加雙主修到快變正科的哲學，同時也在藝術設計學程開心玩耍中；因為想同時兼顧興趣和主科，衝了很多活動做了很多職務，兩年下來一直以為自己過得是不健康的爆肝生活，最近才發現原來只是熊熊燃燒的熱血Hacker魂。喜歡康德和克理斯多福諾蘭的電影。</p>
-        </div>
-
-       <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
-          <img class="img-circle puchin" src="images/puchin.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2 id="PuChinName"><a href="https://www.facebook.com/profile.php?id=100002146774789" target="_blank" style="text-decoration:none;color:#FFEF24">陳步青 Puchin</a></h2>
-          <h4 style="color:#75422D">Web Development</h4>
-           <p>我很喜歡交朋友、和不同領域的人接觸。programming對我而言不僅有趣，而且是個能有效解決生活上問題的強大工具。最近迷上設計思考，體會到使用者經驗對於一個產品的重要有時更甚於它的功能。</p>
-        </div>
-
-        
-      </div>
-      <div class="row">
-        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
-          <img class="img-circle" src="images/Niu.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/profile.php?id=1669825062&fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">牛勝雍 Niu</a></h2>
-          <h4 style="color:#75422D">Hackathon Competition</h4>
-          <p>熱愛創意發想及國際跨領域合作，喜愛激發人們動手做、創意構思的過程。曾任AIESEC幹部、汶川災區教學志工、哈佛商學院國際關係論壇等國際組織。致力於推廣生醫領域與工程實實作經驗、管理顧問的結合，並召集iGEM台大國際代表隊於三周內募資百萬，於波士頓和組員共同努力取得世界競賽金牌。未來希望能透過撰寫專欄，inspire更多的你妳您^^</p>
-        </div>
-       
-         <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
-          <img class="img-circle" src="images/Alex.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/profile.php?id=100001646012981&fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">高章琛 Alex</a></h2>
-          <h4 style="color:#75422D">School Club</h4>
-          <p>機械大三，熱愛工程機械及各式各樣的事物。對創意充滿了熱情。喜愛社群網路與人互動建立連結。期待能使更多人體會Hacker 精神，使得這個世界發生變化。</p>
-        </div>
-
-        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
-          <img class="img-circle" src="images/ping-min.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2><a href="https://www.facebook.com/pingmin?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">林秉民 Ping-Min </a></h2>
-          <h4 style="color:#75422D">Training Gathering</h4>
-          <p>電機系大三，雙主修財金，曾試圖用經濟學解釋電子學，對程式有莫名奇妙的熱情。廣泛涉獵不同領域，並持續嘗試將它們系統性的整合。喜歡動手解決問題，希望能讓更多人了解Hacker Spirit，一起讓世界變得更好。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
-  </section>
   <section id="qa" class="slide spirits" style="background-image: url('images/black-Linen.png'); background-size: cover; background-repeat: no-repeat;">
 
     <div class="wrapper">
@@ -418,7 +337,6 @@
 
 <script>
   $("#resp_head1").fitText(0.6);
-
   $("#resp_head2").fitText(0.9);
   $("#resp_head3").fitText(1.04);
   $("#resp_head4").fitText(0.7);
@@ -426,6 +344,7 @@
 </script>
 <!-- <script type="text/javascript" src="./javascripts/avgrund.js"></script> -->
 <!-- <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> -->
+
 
 <script>
   function resizePages() {
@@ -446,12 +365,13 @@
     });
   });
 </script>
+
+
+
 <script>
+
   $('body').hide();
-  // $('.title').hide();
-  // $('.left-time').hide();
-  // $('.right-time').hide();
-  // $(window).load(function() {
+  //$(window).load(function() {
     // this will fire after the entire page is loaded, including images
   // });
     $('#intro').preload(function(){
@@ -471,16 +391,12 @@
         $(this).siblings('.director-info').slideToggle();
       })
     });
-  
-  // $(function() {
-  //   $('.bg').one('load',function() {
-  //       // fire when image loads
-  //     alert('sdf');
-  //     $('.title').show().addClass('animated bounceInUp');
-  //     $('.left-time').show().addClass('animated bounceInLeft');  
-  //     $('.right-time').show().addClass('animated bounceInRight'); 
-  //   });
-  // });
+    $('#intro').show();
+    $('.title').show().addClass('animated bounceInUp');
+    $('.left-time').show().addClass('animated bounceInLeft');  
+    $('.right-time').show().addClass('animated bounceInRight'); 
+    $('body').show();
+  //});
 
   // hover on title and then enter FB event page
   $('.title').on('hover', function() {
