@@ -1143,6 +1143,11 @@ ul.arrow li {
   margin: 1em 0 0.8em;
 }
 
+.staff p {
+  text-align:center; 
+  margin:10px 15%;
+}
+ 
 /*.staff .col-lg-4{
   width: 400px;
 }
