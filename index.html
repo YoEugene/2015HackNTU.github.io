@@ -29,10 +29,10 @@
   <script type="text/javascript" src="javascripts/jquery.preload.min.js"></script>
   <script>
   	function animateWilsonStart(){
-      $('#wilsonName').addClass('animated flash');
+      $('#wilsonName').addClass('animated tada');
     }
     function animateWilsonEnd(){
-      $('#wilsonName').removeClass('animated flash');
+      $('#wilsonName').removeClass('animated tada');
     }
     function getIEVersion(){
         var agent = navigator.userAgent;
@@ -363,7 +363,19 @@
 
 
 <script>
-
+	$('.tip').miniTip({
+  className: 'green',
+  offset: 30,
+  showAnimateProperties: {'top': '-=10'},
+  hideAnimateProperties: {'top': '+=10'},
+  position: 'bottom',
+  onLoad: function(element, minitip) {
+    $(element).animate({'opacity': 0.35}, '350');
+  },
+  onHide: function(element, minitip) {
+    $(element).animate({'opacity': 1}, '250');
+  }
+});
   $('body').hide();
     // $(window).load(function() {
     // this will fire after the entire page is loaded, including images
