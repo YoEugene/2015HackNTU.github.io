@@ -11,17 +11,41 @@
   <meta property="og:image" content="http://i.imgur.com/jwOHhqi.jpg" /> 
   <meta property="og:description" content="HackNTU至今已舉辦兩屆。2015年的HackNTU，我們將擴大規模，寄望成為亞洲、甚至全世界舉足輕重的Hackathon。歡迎一同加入我們的行列，流著Hacker Spirit的血液。讓我們一起Hack the world吧！" />
   <!-- <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
-
- <!--  <link rel="stylesheet" href="./stylesheets/demo.css">
-  <link rel="stylesheet" href="./stylesheets/avgrund.css"> -->
+  <!-- <link rel="stylesheet" href="./stylesheets/avgrund.css"> -->
   <link rel="shortcut icon" href="./favicon.ico"/>
   <link href="./stylesheets/print.css" rel="stylesheet" type="text/css" />
   <link href="./stylesheets/animate.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">  
   <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
   <title>2015HackNTU</title>
   <!--[if IE]> <script type="text/javascript" src="./javascripts/fucking-IE.js"></script> <![endif]-->
   <script>
+  	// alert('fu!');
+
+  	// $('#show').click(function(){
+  	// 	alert('hey!');
+  	// });
+ //  	$(function() {
+	// 	$('#show').avgrund({
+	// 	    width: 380, // max is 640px
+	// 	    height: 280, // max is 350px
+	// 	    showClose: false, // switch to 'true' for enabling close button
+	// 	    showCloseText: '', // type your text for close button
+	// 	    closeByEscape: true, // enables closing popup by 'Esc'..
+	// 	    closeByDocument: true, // ..and by clicking document itself
+	// 	    holderClass: '', // lets you name custom class for popin holder..
+	// 	    overlayClass: '', // ..and overlay block
+	// 	    enableStackAnimation: false, // enables different type of popin's animation
+	// 	    onBlurContainer: '', // enables blur filter for specified block
+	// 	    openOnEvent: true, // set to 'false' to init on load
+	// 	    setEvent: 'click', // use your event like 'mouseover', 'touchmove', etc.
+	// 	    onLoad: function (elem) { ... }, // set custom call before popin is inited..
+	// 	    onUnload: function (elem) { ... }, // ..and after it was closed
+	// 	    template: 'Your string content goes here..' // or function (elem) { ... }, or selector $('.content')
+	// 	});
+	// });
+	
   	function animateWilsonStart(){
       $('#wilsonName').addClass('animated flash');
     }
@@ -48,6 +72,7 @@
     if(is_ie10)
       hackir();
   </script>
+
 </head>
 
 <body>
@@ -69,13 +94,23 @@
   </div>
   <section id="intro" class="slide intro">
     <div class="bg" style="position: fixed; width: 100%; height: 100%; background-image: url('images/homepage.png'); background-size: cover; background-repeat: no-repeat; background-position: top center; z-index: 0"></div>
-    <div class="block">
+    <div style="text-align:center;" class="block">
       <div class="title" data-0="top:0px;" data-100="top:100px;">
         <a href="https://www.facebook.com/events/312058285645634/?notif_t=plan_user_invited" target="_blank">
           <h1 id="resp_head1">2015HackNTU</h1>
           <h2 id="resp_head2">籌備團隊招募</h2>
         </a>
       </div>
+      <!-- Button that triggers the popup -->
+            
+            <!-- Element to pop up -->
+            <div style="text-align:center;" id="element_to_pop_up">
+	            Content of popup
+	            <input type="text" class="form-control" placeholder="Email">
+	            <button class="btn btn-success">Send!</button>
+            </div>
+      <!-- <a href="#" id="show" class="button left">btn</a> -->
+      <!-- <button>我想關注</button> -->
       <div class="logo" data-100="opacity: 0.7; top: 12px;" data-400="opacity: 0; top:-50px;">
       </div>
       <div>
@@ -93,8 +128,10 @@
           <h2 class="chi-type time">面試</h2>  
           <h3 class="chi-type time">11/29(六) @ 二活606/706</h3>
           <h3 class="chi-type time">11/30(日) @ 二活606/706</h3>
-        </div>
-        
+        </div><!-- 
+        <div style="text-align:center;" class="col-sm-12">
+	        <button id="my-button" class="btn btn-primary">Subscribe!</button>
+        </div> -->
         <!-- <p>請密切注意</p> -->
         <!-- <h2>時間：11/27（四）18:30, 11/29（六）18:30</h2>
         <h2>地點：台灣大學新生教學館102教室</h2> -->
@@ -158,57 +195,44 @@
     <div style="width:1024px; margin: 0 auto;" >
       <h1 data-800-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:100px;">Staff</h1>
     </div>
-      <!-- Three columns of text below the carousel -->
-      <div style="width:1024px; margin: 0 auto;">
-         <div style="margin:0 auto;" class="row" >
-              <div style="text-align:center" class="col-sm-4 col-sm-offset-4">
-                <img class="img-circle" src="images/poseidon.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-                <h2><a href="https://www.facebook.com/handsomeposeidon?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">侯海琦 Poseidon</a></h2>
-                <h4 style="color:#75422D">Team Player</h4>
-                <p>上天賦予了AS亞斯伯格症與ADHD注意力不足過動症兩項技能，造就現在喜歡動口開拓業務、動手開發軟硬體、動腳開闢疆土的我，缺點是靜不下來、睡不太著、喜愛整人。剛從邪教AIESECer回歸正派Hacker，夢想是一個說衝就衝的團隊與一項挑戰世界的發明！</p>
-              </div>
-        </div>
 
-    <div style="margin:10px">
-      <div class="row">
-        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
+        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-3">
           <img class="img-circle" src="images/clayton6.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
           <h2><a href="https://www.facebook.com/profile.php?id=842927021&fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">趙育誠 Clayton </a></h2>
           <h4 style="color:#75422D">Cooperative Management</h4>
           <p>戲劇加政治大三，對於溝通、交涉、談判、辯論、協調以及任何跟口語表達和人有關的事務有很大的興趣跟熱忱，任何事完全可以說衝就衝。曾經以一個MUNer前往紐約兩次，感受世界有多大，接下來希望能以Hacker的身份跟2015HackNTU的夥伴一起向世界挑戰。</p>
         </div>
        
-        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
+        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-3">
           <img class="img-circle" src="images/kuan.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
           <h2><a href="https://www.facebook.com/s3355004?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">李冠億 Kuan</a></h2>
           <h4 style="color:#75422D">Financial Management</h4>
           <p>會計系畢業，擔任GIS Taiwan 2013總召時，見識到跨領域合作的神奇魔力，並對於一群夥伴透過對話、激盪、構思而後大膽行動的無限可能，感到驚豔、驚喜！作為台大校慶和畢業典禮司儀，是大學生活的有趣經驗。目前在內政部地政司服役。</p>
         </div>
 
-         <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
+         <!-- <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
           <img class="img-circle" src="images/xiaobun.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;">
           <h2 id="BunName"><a href="https://www.facebook.com/profile.php?id=100001968982237" target="_blank" style="text-decoration:none;color:#FFEF24">徐粲翔 Bun</a></h2>
           <h4 style="color:#75422D">Web Development</h4>
           <p>現台大資工四，前熱舞社教學，平常對於Web前端與Andriod頗有研究，今年暑假在EZTable擔任F2E Intern。喜歡新潮技術，也喜歡跳舞，綽號台大小巨人的我喜歡喝牛奶。</p>
-        </div><!-- /.col-lg-4 -->
+        </div> -->
 
-      </div>
-      <div class="row">
-        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
+      
+        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-3">
           <img class="img-circle" src="images/2015hackNTUWilson.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;">
           <h2 id="wilsonName"><a href="https://www.facebook.com/ji.huang.948" target="_blank" style="text-decoration:none;color:#FFEF24" onmouseover="animateWilsonStart()" onmouseout="animateWilsonEnd()">黃偉軒 Wilson</a></h2>
           <h4 style="color:#75422D">Digital Marketing</h4>
           <p>遊歷台成政三間大學，最後落腳於台大資工。妄想成為Iron man，熱愛高科技、分析資料情報、設計、與人交流。擅長觀察使用者，現正在努力成為像樣的UI/UX Designer。喜歡唱歌，看電影，以及說做就做的Hacker spirit</p>
         </div>
-        
-        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
+        </div>
+        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-3">
           <img class="img-circle" src="images/eric.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
           <h2><a href="https://www.facebook.com/uniericuni?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">辛爾康 Eric</a></h2>
           <h4 style="color:#75422D">Brand Design</h4>
           <p>電機三外加雙主修到快變正科的哲學，同時也在藝術設計學程開心玩耍中；因為想同時兼顧興趣和主科，衝了很多活動做了很多職務，兩年下來一直以為自己過得是不健康的爆肝生活，最近才發現原來只是熊熊燃燒的熱血Hacker魂。喜歡康德和克理斯多福諾蘭的電影。</p>
         </div>
-
-       <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
+	<div style="margin-bottom:20px" class="row">
+       <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-3">
           <img class="img-circle puchin" src="images/puchin.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
           <h2 id="PuChinName"><a href="https://www.facebook.com/profile.php?id=100002146774789" target="_blank" style="text-decoration:none;color:#FFEF24">陳步青 Puchin</a></h2>
           <h4 style="color:#75422D">Web Development</h4>
@@ -216,23 +240,22 @@
         </div>
 
         
-      </div>
-      <div class="row">
-        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
+      
+        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-3">
           <img class="img-circle" src="images/Niu.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
           <h2><a href="https://www.facebook.com/profile.php?id=1669825062&fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">牛勝雍 Niu</a></h2>
           <h4 style="color:#75422D">Hackathon Competition</h4>
           <p>熱愛創意發想及國際跨領域合作，喜愛激發人們動手做、創意構思的過程。曾任AIESEC幹部、汶川災區教學志工、哈佛商學院國際關係論壇等國際組織。致力於推廣生醫領域與工程實實作經驗、管理顧問的結合，並召集iGEM台大國際代表隊於三周內募資百萬，於波士頓和組員共同努力取得世界競賽金牌。未來希望能透過撰寫專欄，inspire更多的你妳您^^</p>
         </div>
        
-         <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
+         <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-3">
           <img class="img-circle" src="images/Alex.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
           <h2><a href="https://www.facebook.com/profile.php?id=100001646012981&fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">高章琛 Alex</a></h2>
           <h4 style="color:#75422D">School Club</h4>
           <p>機械大三，熱愛工程機械及各式各樣的事物。對創意充滿了熱情。喜愛社群網路與人互動建立連結。期待能使更多人體會Hacker 精神，使得這個世界發生變化。</p>
         </div>
 
-        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
+        <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-3">
           <img class="img-circle" src="images/ping-min.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
           <h2><a href="https://www.facebook.com/pingmin?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">林秉民 Ping-Min </a></h2>
           <h4 style="color:#75422D">Training Gathering</h4>
@@ -313,6 +336,9 @@
 <script src="./javascripts/skrollr.min.js"></script>
 <script src="./javascripts/skrollr.menu.min.js"></script>
 <script type="text/javascript" src="javascripts/jquery.preload.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/x.x.x/jquery.min.js"></script>
+<script src="./javascripts/jquery.bpopup.min.js"></script>
+
 <script>
   $("#resp_head1").fitText(0.6);
 
@@ -325,6 +351,33 @@
 <!-- <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> -->
 
 <script>
+	;(function($) {
+
+         // DOM Ready
+        $(function() {
+
+            // Binding a click event
+            // From jQuery v.1.7.0 use .on() instead of .bind()
+            $('#my-button').bind('click', function(e) {
+
+                // Prevents the default action to be triggered. 
+                e.preventDefault();
+
+                // Triggering bPopup when click event is fired
+                $('#element_to_pop_up').bPopup({
+                	fadeSpeed: 'slow',
+		            modalClose: false,
+		            opacity: 0.6,
+		            positionStyle: 'fixed', //'fixed' or 'absolute'
+		            modalColor: 'Black',
+		            modalClose: true
+		        });
+
+            });
+
+        });
+
+    })(jQuery);
   function resizePages() {
     var h = $(window).height();
     var height = h < 600 ? 600 : h;
