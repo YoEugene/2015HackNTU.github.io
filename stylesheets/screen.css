@@ -1290,3 +1290,19 @@ footer a.author {
 .sidenav a{
   font-size:1.25em;
 }
+
+.division {
+  position: relative;
+  /*background: #72541E;*/
+  background-image: url('../images/orange.jpg');
+  color: #fff;
+}
+
+.division-item{
+  text-align: center;
+}
+.director-info{
+  position: absolute;
+  top:5em;
+  z-index: 10;
+}
