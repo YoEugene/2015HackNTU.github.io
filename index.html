@@ -21,6 +21,12 @@
   <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <title>2015HackNTU</title>
   <!--[if IE]> <script type="text/javascript" src="./javascripts/fucking-IE.js"></script> <![endif]-->
+
+  <script src="./javascripts/jquery-1.8.3.js"></script>
+  <script src="./javascripts/jquery.fittext.js"></script>
+  <script src="./javascripts/skrollr.min.js"></script>
+  <script src="./javascripts/skrollr.menu.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.preload.min.js"></script>
   <script>
   	function animateWilsonStart(){
       $('#wilsonName').addClass('animated flash');
@@ -195,7 +201,7 @@
         <div style="text-align:center; margin:10px auto; height: 500px;" class="col-sm-4">
           <img class="img-circle" src="images/kuan.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
           <h2><a href="https://www.facebook.com/s3355004?fref=ts" target="_blank" style="text-decoration:none;color:#FFEF24">李冠億 Kuan</a></h2>
-          <h4 style="color:#75422D">Financial Management</h4>
+          <h4 style="color:#75422D">Performance Management</h4>
           <p>會計系畢業，擔任GIS Taiwan 2013總召時，見識到跨領域合作的神奇魔力，並對於一群夥伴透過對話、激盪、構思而後大膽行動的無限可能，感到驚豔、驚喜！作為台大校慶和畢業典禮司儀，是大學生活的有趣經驗。目前在內政部地政司服役。</p>
         </div>
 
@@ -322,11 +328,7 @@
      <img src="images/bedge.png" width="1" height="1" alt=""/>
   </div>
 </body>
-<script src="./javascripts/jquery-1.8.3.js"></script>
-<script src="./javascripts/jquery.fittext.js"></script>
-<script src="./javascripts/skrollr.min.js"></script>
-<script src="./javascripts/skrollr.menu.min.js"></script>
-<script type="text/javascript" src="javascripts/jquery.preload.js"></script>
+
 <script>
   $("#resp_head1").fitText(0.6);
   $("#resp_head2").fitText(0.9);
@@ -364,13 +366,27 @@
   $('body').hide();
   $(window).load(function() {
     // this will fire after the entire page is loaded, including images
-    $('#intro').show();
-    $('.title').show().addClass('animated bounceInUp');
-    $('.left-time').show().addClass('animated bounceInLeft');  
-    $('.right-time').show().addClass('animated bounceInRight'); 
-    $('body').show();
-  });
-
+  // });
+    $('#intro').preload(function(){
+      var t = setTimeout(function(){
+        $('#intro').show();
+        $('.title').show().addClass('animated bounceInUp');
+        $('.left-time').show().addClass('animated bounceInLeft');  
+        $('.right-time').show().addClass('animated bounceInRight');
+        $('body').show();
+        },500
+      );
+    });
+  
+  // $(function() {
+  //   $('.bg').one('load',function() {
+  //       // fire when image loads
+  //     alert('sdf');
+  //     $('.title').show().addClass('animated bounceInUp');
+  //     $('.left-time').show().addClass('animated bounceInLeft');  
+  //     $('.right-time').show().addClass('animated bounceInRight'); 
+  //   });
+  // });
 
   // hover on title and then enter FB event page
   $('.title').on('hover', function() {
