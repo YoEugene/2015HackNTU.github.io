@@ -485,8 +485,12 @@ div#preload { display: none; }
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 400px;
   width: 40%;
+  padding: 10px;
+  opacity: 0.9;
+  font-size: 3em;
+  font-family: "Patua One", cursive;
 }
 
 .intro .title a:hover {
@@ -1142,19 +1146,37 @@ ul.arrow li {
 
 /* line 634, ../sass/screen.scss */
 .staff {
-  position: relative;
+  /*position: relative;*/
   /*background: #72541E;*/
   background-image: url('../images/orange.jpg');
   color: #fff;
+}
+
+.staff .row {
+  margin: 10% 5%;
+}
+
+.staff .row div {
+  text-align:center;
+  margin: 0;
+  /*margin: auto;*/
+  /*height: 600px;*/
 }
 /* line 638, ../sass/screen.scss */
 .staff h1 {
   margin: 1em 0 0.8em;
 }
 
-.staff p {
+.staff .col-sm-6 p {
   text-align:center; 
-  margin:10px 15%;
+  width: 60%;
+  margin: 10px auto;
+}
+
+.staff .col-sm-4 p {
+  text-align:center; 
+  width: 80%;
+  margin:10px auto;
 }
  
 /*.staff .col-lg-4{
