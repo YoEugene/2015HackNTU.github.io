@@ -422,12 +422,13 @@ $(function() {
 
   function validation() {
     var testEmail = $('#emailForSubscribe').val();
-    var name = $('#nameForSubscribe').val();
+    // var name = $('#nameForSubscribe').val();
     var re = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     if(re.test(testEmail)) {
-      
-      if(name != ''){
-      	storeEmail(testEmail, name);
+      if($('#nameForSubscribe').val() != ''){
+      	storeEmail(testEmail, $('#nameForSubscribe').val());
+      	$('#emailForSubscribe').val('');
+      	$('#nameForSubscribe').val('');
       	$('#element_to_pop_up').bPopup().close();
       }
       else{
