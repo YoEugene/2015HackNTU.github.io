@@ -121,7 +121,7 @@
       </div>
       
       <!-- Button that triggers the popup -->
-      <button id="my-button-subscribe" class="btn btn-warning btn-lg btn-block subscribe">我要關注</button>
+      <button id="my-button-subscribe" class="btn btn-warning btn-lg btn-block subscribe up-time">我要關注</button>
             
       <!-- Element to pop up -->
       <div id="element_to_pop_up">
@@ -143,6 +143,7 @@
           <input type="email" class="form-control" id="emailForSubscribe" placeholder="Enter email">
         </div>
         <small id="emailValResult"></small><br>
+        <small id="nameValResult"></small><br>
         <button type="button" class="btn btn-primary" id="subscribe-on">確認</button>
         <button type="button" class="btn btn-default" id="subscribe-off">取消</button>
       </div>
@@ -424,8 +425,17 @@ $(function() {
     var name = $('#nameForSubscribe').val();
     var re = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     if(re.test(testEmail)) {
-      $('#element_to_pop_up').bPopup().close();
-      storeEmail(testEmail, name);
+      
+      if(name != ''){
+      	storeEmail(testEmail, name);
+      	$('#element_to_pop_up').bPopup().close();
+      }
+      else{
+      	$('#nameValResult').text("您叫什麼名字呢？ ：）");
+      	$('#nameValResult').css("color", "orange");
+      	$('#emailValResult').text("");
+      	
+      }
     }
     else {
       $('#emailValResult').text("您的email格式好像不正確唷，請再檢查一次：）");
@@ -479,6 +489,7 @@ $(function() {
       $('.title').show().addClass('animated bounceInUp').one('webkitAnimationEnd mozAnimationEnd  MSAnimationEnd oanimationend animationend', function() {$(this).removeClass('bounceInUp')});
       $('.left-time').show().addClass('animated bounceInLeft');  
       $('.right-time').show().addClass('animated bounceInRight');
+      $('.up-time').show().addClass('animated zoomIn');
       $('body').show();
     // });
   // hover on title and then enter FB event page

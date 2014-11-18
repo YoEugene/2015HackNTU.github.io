@@ -12,3 +12,8 @@
     min-height: 180px;
 }
 
+.up-time {
+  -vendor-animation-duration: 5s;
+  -vendor-animation-delay: 5s;
+  -vendor-animation-iteration-count: infinite;
+}
