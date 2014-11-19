@@ -70,7 +70,28 @@
 </head>
 
 <body>
-  <div class="sidenav-wrapper" style="width:200px;z-index:999;position:fixed;left:10px;top:0px;" >
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand active" href="#intro">HackNTU</a>
+	        </div>
+	        <div class="collapse navbar-collapse">
+	          <ul class="nav navbar-nav">
+	            <li><a href="#about" data-anchor-target="#about" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">About</a></li>
+	            <li><a href="#hackathon" data-anchor-target="#hackathon" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">Hackathon</a></li>
+	            <li><a href="#staff" data-anchor-target="#staff" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">Team</a></li>
+	            <li><a href="#qa" data-anchor-target="#qa" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">FAQ</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+  <!-- <div class="sidenav-wrapper" style="width:200px;z-index:999;position:fixed;left:10px;top:0px;" >
     <nav class="nav sidenav" style="position:fixed;" data-300="opacity:0;top:-100px;" data-500="opacity: 1;top: 20px;" data-4700="opacity:1;top: 20px;" data-5500="opacity:0;">
       <li><a href="#about" data-anchor-target="#about" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">
         About
@@ -85,7 +106,7 @@
         FAQ
       </a></li>
     </nav>
-  </div>
+  </div> -->
 
   <section id="intro" class="slide intro">
     <div class="bg" style="position: fixed; width: 100%; height: 100%; background-image: url('images/homepage3.jpg'); background-size: cover; background-repeat: no-repeat; background-position: top center; z-index: 0"></div>
@@ -308,7 +329,7 @@
           <h1 data-300-top="opacity: 0; left:-50%;" data-100-top="opacity:1;left:-35%;">FAQ</h1>
       	</div>
 		
-        <div style="margin:0 auto 0 8%">
+        <div style="margin:0 auto 0 ">
           <div style="text-align:center; height: 300px;" class="col-sm-6">
             <h2 style="color:#F9F900">什麼是黑客精神？</h2>
             <p>Hacker Spirit指的是善於獨立思考，喜歡自由探索的一種精神，並且熱衷解決自己發現的問題、克服限制。在此已經不只是指精通於寫電腦程式、網路的人，以最短的時間創造最大價值，改變社會，改變世界，就算是藝術，設計，活動其他領域，只要符合以上條件的人，都可稱為Hacker。</p>
