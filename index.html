@@ -144,7 +144,7 @@
       <!-- Button that triggers the popup -->
       <button id="my-button-subscribe" class="btn btn-warning btn-lg btn-block subscribe up-time">我要關注</button>
       <div class="space"></div>
-      <button id="recruitment-button" class="btn btn-primary btn-lg btn-block subscribe up-time">招募報名</button>
+      <a href="https://docs.google.com/forms/d/1b3FA0jLWUh1UCCaO0ikqsLlSZ-l-4PUJvMyyePhJftk/viewform" class="btn btn-primary btn-lg btn-block subscribe up-time" role="button" id="recruitment-button">招募報名</a>
             
       <!-- Element to pop up -->
       <div id="element_to_pop_up">
@@ -170,69 +170,6 @@
         <button type="button" class="btn btn-primary" id="subscribe-on">確認</button>
         <button type="button" class="btn btn-default" id="subscribe-off">取消</button>
       </div>
-
-      <div id="recruitment_pop_up">
-        <h2>我要如何成為2015HackNTU的一員呢？</h2>
-        <hr>
-        <p class="lead">
-          只要填寫下列表單，<br>
-          填妥按確認送出之後我們將會收到您的報名資訊，<br>
-          就算完成囉！
-        </p>
-        <div class="form-group">
-          <label style="font-size: 17px">1. 系級</label>
-          <input type="text" class="form-control" id="deparForRecruitment" placeholder="機械三">
-        </div>
-        <div class="form-group">
-          <label style="font-size: 17px">2. 姓名</label>
-          <input type="text" class="form-control" id="nameForRecruitment" placeholder="陳小東">
-        </div>
-        <div class="form-group">
-          <label style="font-size: 17px">3. Email</label>
-          <input type="text" class="form-control" id="emailForRecruitment" placeholder="myemail@example.com">
-        </div>
-        <div class="form-group">
-          <label style="font-size: 17px">4. 我可以參加面試的時間是</label><br>
-          <em style="color: #003D79">
-          面試時間如果你都有事了，煩請寄信給hackntu@gmail.com告訴我們，如果你有多個時段都可以就都一併選擇起來
-          </em>
-          <div class="checkbox">
-            <label class="checkbox">
-              <input type="checkbox" id="interviewTime1" value="Sat" name="interviewTime"> 11/29(六) @ 二活606/706
-            </label>
-            <label class="checkbox">
-              <input type="checkbox" id="interviewTime2" value="Sun" name="interviewTime"> 11/30(日) @ 二活606/706
-            </label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label style="font-size: 17px">5. 我可以參加說明會的時間是</label><br>
-          <em style="color: #003D79">
-          在說明會上你可以了解整個組織的架構，以及HackNTU的來由與今年的遠景，當然也包含了我們面試的資訊與流程，所以希望任何對於HackNTU有興趣的朋友們，能讓我們知道你可能可以來的時段
-          </em>
-          <div class="checkbox">
-            <label class="checkbox">
-              <input type="checkbox" id="seminarTime1" value="Thur" name="seminarTime"> 11/27(四) 18:30 @ 活大104
-            </label>
-            <label class="checkbox">
-              <input type="checkbox" id="seminarTime2" value="Fri" name="seminarTime"> 11/28(五) 18:30 @ 新生102
-            </label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label style="font-size: 17px">6. 我想說的話</label><br>
-          <em style="color: #003D79">
-          在這裡，你可以說說任何你想說的話，包含簡單敘述一下自己，曾經參加過哪些活動，哪些實習，擔任過哪個幹部，或是任何你覺得對你來說是很值得跟他人分享的事情，都歡迎告訴我們，也讓我們能更了解你這個人：）
-          </em>
-          <textarea class="form-control" rows="5" id="smallTalkRecruitment"></textarea>
-        </div>
-        <small id="interviewCheck"></small><br>
-        <small id="emailCheck"></small><br>
-        <small id="nameCheck"></small><br>
-        <button type="button" class="btn btn-primary" id="recruitment-on">確認</button>
-        <button type="button" class="btn btn-default" id="recruitment-off">取消</button>
-      </div>
-
     </div>
   </section>
   <section id="about" class="slide about" style="background-image: url('images/food.png')">
@@ -476,8 +413,8 @@
       // Triggering bPopup when click event is fired
       $('#element_to_pop_up').bPopup({
         modalClose: false,
-        opacity: 0.6,
-        positionStyle: 'fixed' //'fixed' or 'absolute'
+        opacity: 0.6
+        // positionStyle: 'fixed' //'fixed' or 'absolute'
       });
     });
   });
@@ -531,105 +468,6 @@ $(function() {
   }
 
   $('#subscribe-on').bind('click', validation);
-});
-</script>
-
-<script>
-;(function($) {
-  // DOM Ready
-  $(function() {
-    // Binding a click event
-    // From jQuery v.1.7.0 use .on() instead of .bind()
-    $('#recruitment-button').bind('click', function(e) {
-      // Prevents the default action to be triggered. 
-      e.preventDefault();
-      // Triggering bPopup when click event is fired
-      $('#recruitment_pop_up').bPopup({
-        modalClose: false,
-        opacity: 0.6,
-        scrollbar: true
-      });
-    });
-  });
-})(jQuery);
-</script>
-
-<script>
-  $(function() {
-    $('#recruitment-off').bind('click', function(e) {
-      e.preventDefault();
-      $('#recruitment_pop_up').bPopup().close();
-    });
-  });
-</script>
-
-<script>
-$(function() {
-  var time = new Date().getTime();
-  var myFirebaseRef = new Firebase("https://blinding-heat-393.firebaseio.com/test");
-  function storeRecruitment(data) {
-    var usersRef = myFirebaseRef.child(name);
-    usersRef.set({
-      department: data.department,
-      name: data.name,
-      email: data.email,
-      interview: data.interview,
-      seminar: data.seminar,
-      extra: data.extra,
-      time: time
-    });
-  }
-
-  function validation() {
-    var testEmail = $('#emailForRecruitment').val();
-    var re = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    $('#interviewCheck').text("");
-    if(re.test(testEmail)) {
-      if($('#nameForRecruitment').val() != ''){
-        var dataObj = {};
-        dataObj.department = $('#deparForRecruitment').val();
-        dataObj.name = $('#nameForRecruitment').val();
-        dataObj.email = $('#emailForRecruitment').val();
-        if($("input[name='interviewTime']:checked").length == 2) {
-          dataObj.interview = "both";
-        }
-        else
-          dataObj.interview = $("input[name='interviewTime']:checked").val();
-        if($("input[name='seminarTime']:checked").length == 2) {
-          dataObj.seminar = "both";
-        }
-        else
-          dataObj.seminar = $("input[name='seminarTime']:checked").val();
-        dataObj.extra = $('#smallTalkRecruitment').val();
-        console.log(dataObj);
-
-        // storeRecruitment(dataObj);
-        $('#emailForRecruitment').val('');
-        $('#nameForRecruitment').val('');
-        $('#recruitment_pop_up').bPopup().close();
-      }
-      else{
-        $('#nameCheck').text("您叫什麼名字呢？ ：）");
-        $('#nameCheck').css("color", "orange");
-        $('#emailCheck').text("");
-      }
-    }
-    else {
-      $('#emailCheck').text("您的email格式好像不正確唷，請再檢查一次：）");
-      $('#emailCheck').css("color", "green");
-    }
-    return false;
-  }
-
-  $('#recruitment-on').bind('click', function() {
-    //interview time should be chosen at least one
-    if($("input[name='interviewTime']:checked").length == 0){
-      $('#interviewCheck').text("您沒有選擇任何面試時段唷");
-      $('#interviewCheck').css("color", "red");
-    }
-    else
-      validation();
-  });
 });
 </script>
 
