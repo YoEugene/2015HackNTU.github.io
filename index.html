@@ -65,6 +65,7 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-56847554-1', 'auto');
+  ga('require', 'displayfeatures');
   ga('send', 'pageview');
 </script>
 
@@ -434,7 +435,7 @@
 <script>
 $(function() {
   var time = new Date().getTime();
-  var myFirebaseRef = new Firebase("https://resplendent-torch-8356.firebaseio.com/subscribe_email");
+  var myFirebaseRef = new Firebase("https://resplendent-torch-8356.firebaseio.com/test");
   function storeEmail(testEmail, name) {
     var usersRef = myFirebaseRef.child(name);
     usersRef.set({
