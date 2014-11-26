@@ -12,3 +12,20 @@
     min-height: 180px;
 }
 
+#recruitment_pop_up {
+  display:none; 
+  background-color:#fff;
+  border-radius:15px;
+  color:#000;
+  display:none; 
+  padding:20px;
+  min-width:400px;
+  min-height:180px;
+  width:800px;
+}
+
+.up-time {
+  -vendor-animation-duration: 5s;
+  -vendor-animation-delay: 5s;
+  -vendor-animation-iteration-count: infinite;
+}
