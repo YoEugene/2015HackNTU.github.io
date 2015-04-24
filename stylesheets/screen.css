@@ -436,10 +436,17 @@ div#preload { display: none; }
   width: 1024px;
 }
 
+.form {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+}
+
 /* line 32, ../sass/screen.scss */
 .slide {
   width: 100%;
-  min-height: 800px;
+  min-height: 640px;
   position: relative;
   overflow: hidden;
 }
@@ -456,6 +463,8 @@ div#preload { display: none; }
 /* line 45, ../sass/screen.scss */
 .intro {
   background: #FFFFFF;
+  position: relative;
+  
 }
 
 /*.bg {
@@ -472,7 +481,7 @@ div#preload { display: none; }
 .intro .title {
   position: relative;
   z-index: 2;
-  margin: 0 auto;
+  margin: 100px auto 0;
   max-width: 600px;
   width: 40%;
 }
@@ -775,7 +784,7 @@ ul.arrow li {
 .about .describe {
   display: inline-block;
   position: relative;
-  margin: 1% 5% 1% 0%;
+  margin: 10% 5% 1% 0%;
   width: 50%;
   min-width: 360px;
 }
@@ -898,7 +907,7 @@ ul.arrow li {
 .hackathon .describe {
   max-width: 600px;
   width: 80%;
-  margin: 9% auto 0;
+  margin: 3% 8% 0;
   padding: 5px 12px;
   background: rgba(243, 136, 94, 1.0);
   border-radius: 20px;
@@ -1239,6 +1248,13 @@ ul.arrow li {
 /* line 682, ../sass/screen.scss */
 .staff .person .information p {
   margin: 2px;
+}
+
+.staff .table thead tr th,
+.staff .table tbody tr th {
+  text-align: center;
+  color: black;
+  font-size: 16px;
 }
 
 /* line 689, ../sass/screen.scss */

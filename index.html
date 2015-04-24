@@ -1,99 +1,112 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-  <meta name="author" content="2015HackNTU">
-  <meta property="og:title" content="2015 HackNTU 工作團隊招募"> 
-  <meta property="og:type" content="website" /> 
-  <meta property="og:url" content="http://2015hackntu.github.io" /> 
-  <meta property="og:site_name" content="HackNTU" /> 
-  <meta name="robots" content="noindex" /> 
-  <meta property="og:image" content="http://i.imgur.com/jwOHhqi.jpg" /> 
-  <meta property="og:description" content="HackNTU至今已舉辦兩屆。2015年的HackNTU，我們將擴大規模，寄望成為亞洲、甚至全世界舉足輕重的Hackathon。歡迎一同加入我們的行列，流著Hacker Spirit的血液。讓我們一起Hack the world吧！" />
-  <!-- <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="author" content="2015HackNTU">
+    <meta property="og:title" content="2015 HackNTU 工作團隊招募">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://2015hackntu.github.io" />
+    <meta property="og:site_name" content="HackNTU" />
+    <meta name="robots" content="noindex" />
+    <meta property="og:image" content="http://i.imgur.com/jwOHhqi.jpg" />
+    <meta property="og:description" content="HackNTU 至今已舉辦兩屆。2015 年的 HackNTU，我們將擴大規模，寄望成為亞洲、甚至全世界舉足輕重的 Hackathon。歡迎一同加入我們的行列，一起 Hack the world！" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link href="./stylesheets/print.css" rel="stylesheet" type="text/css" />
+    <link href="./stylesheets/animate.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 
- <!--  <link rel="stylesheet" href="./stylesheets/demo.css">
-  <link rel="stylesheet" href="./stylesheets/avgrund.css"> -->
-  <link rel="shortcut icon" href="./favicon.ico"/>
-  <link href="./stylesheets/print.css" rel="stylesheet" type="text/css" />
-  <link href="./stylesheets/animate.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">  
-  <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <title>2015HackNTU</title>
-  <!--[if IE]> <script type="text/javascript" src="./javascripts/fucking-IE.js"></script> <![endif]-->
+    <title>HackNTU 儲備幹部招募</title>
+    <script src="./javascripts/jquery-1.8.3.js"></script>
+    <script src="./javascripts/jquery.bpopup.min.js"></script>
+    <script src="./javascripts/jquery.fittext.js"></script>
+    <script src="./javascripts/skrollr.min.js"></script>
+    <script src="./javascripts/skrollr.menu.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.preload.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.0.3/firebase.js"></script>
+    <script>
+    function animateWilsonStart() {
+        $('#wilsonName').addClass('animated tada');
+    }
 
-  <script src="./javascripts/jquery-1.8.3.js"></script>
-  <script src="./javascripts/jquery.bpopup.min.js"></script>
-  <script src="./javascripts/jquery.fittext.js"></script>
-  <script src="./javascripts/skrollr.min.js"></script>
-  <script src="./javascripts/skrollr.menu.min.js"></script>
-  <script type="text/javascript" src="javascripts/jquery.preload.min.js"></script>
-  <script src="https://cdn.firebase.com/js/client/2.0.3/firebase.js"></script>
-  <script>
-  	function animateWilsonStart(){
-      $('#wilsonName').addClass('animated tada');
+    function animateWilsonEnd() {
+        $('#wilsonName').removeClass('animated tada');
     }
-    function animateWilsonEnd(){
-      $('#wilsonName').removeClass('animated tada');
-    }
-    function getIEVersion(){
+
+    function getIEVersion() {
         var agent = navigator.userAgent;
         var reg = /MSIE\s?(\d+)(?:\.(\d+))?/i;
         var matches = agent.match(reg);
         if (matches != null) {
-            return { major: matches[1], minor: matches[2] };
+            return {
+                major: matches[1],
+                minor: matches[2]
+            };
         }
-        return { major: "-1", minor: "-1" };
+        return {
+            major: "-1",
+            minor: "-1"
+        };
     }
-    function hackir(){
-      var ss = document.createElement('script');
-      ss.src = "./javascripts/fucking-IE.js";
-      var hh = document.getElementsByTagName('head')[0];
-      hh.appendChild(ss);
+
+    function hackir() {
+        var ss = document.createElement('script');
+        ss.src = "./javascripts/fucking-IE.js";
+        var hh = document.getElementsByTagName('head')[0];
+        hh.appendChild(ss);
     }
-    var ie_version =  getIEVersion();
+    var ie_version = getIEVersion();
     var is_ie10 = ie_version.major == 10;
-    if(is_ie10)
-      hackir();
-  </script>
+    if (is_ie10)
+        hackir();
+    </script>
+    <!-- <script src="javascripts/jail.js"></script> -->
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-<!-- <script src="javascripts/jail.js"></script> -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-56847554-1', 'auto');
-  ga('require', 'displayfeatures');
-  ga('send', 'pageview');
-</script>
-
+    ga('create', 'UA-56847554-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    </script>
 </head>
 
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-	      <div class="container">
-	        <div class="navbar-header">
-	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	            <span class="sr-only">Toggle navigation</span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	          </button>
-	          <a class="navbar-brand active" href="#intro">HackNTU</a>
-	        </div>
-	        <div class="collapse navbar-collapse">
-	          <ul class="nav navbar-nav">
-	            <li><a href="#about" data-anchor-target="#about" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">About</a></li>
-	            <li><a href="#hackathon" data-anchor-target="#hackathon" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">Hackathon</a></li>
-	            <li><a href="#staff" data-anchor-target="#staff" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">Team</a></li>
-	            <li><a href="#qa" data-anchor-target="#qa" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">FAQ</a></li>
-	          </ul>
-	        </div><!--/.nav-collapse -->
-	      </div>
-	    </div>
-  <!-- <div class="sidenav-wrapper" style="width:200px;z-index:999;position:fixed;left:10px;top:0px;" >
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active" href="#intro">HackNTU</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#about" data-anchor-target="#about" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">HackNTU 介紹</a></li>
+                    <li><a href="#hackathon" data-anchor-target="#hackathon" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">儲備幹部計畫</a></li>
+                    <li><a href="#staff" data-anchor-target="#staff" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">說明會 agenda</a></li>
+                    <li><a href="#qa" data-anchor-target="#qa" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">FAQ</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <!-- <div class="sidenav-wrapper" style="width:200px;z-index:999;position:fixed;left:10px;top:0px;" >
     <nav class="nav sidenav" style="position:fixed;" data-300="opacity:0;top:-100px;" data-500="opacity: 1;top: 20px;" data-4700="opacity:1;top: 20px;" data-5500="opacity:0;">
       <li><a href="#about" data-anchor-target="#about" data-40-top-top="@class:sidenav-active" data-40-top-bottom="@class:sidenav-active" data-edge-strategy="reset">
         About
@@ -109,261 +122,183 @@
       </a></li>
     </nav>
   </div> -->
-
-  <section id="intro" class="slide intro">
-    <div class="bg" style="position: fixed; width: 100%; height: 100%; background-image: url('images/homepage3.jpg'); background-size: cover; background-repeat: no-repeat; background-position: top center; z-index: 0"></div>
-    <div class="block">
-      <div class="title" data-0="top:0px;" data-100="top:100px;">
-        <a href="https://www.facebook.com/events/312058285645634/?notif_t=plan_user_invited" target="_blank">
-          <h1 style="text-shadow: 5px 5px 5px #606060;" id="resp_head1">2015HackNTU</h1>
-          <h2 style="text-shadow: 5px 5px 5px #606060;" id="resp_head2">籌備團隊招募</h2>
-        </a>
-      </div>
-      <div class="logo" data-100="opacity: 0.7; top: 12px;" data-400="opacity: 0; top:-50px;">
-      </div>
-      <div>
-        <!-- <div class="space"></div>  -->
-        <div class="space"></div> 
-
-        <div class="col-sm-6 left-time">
-          <h2 class="chi-type time">招募說明會</h2>  
-          <div class="space"></div>
-          <h3 class="chi-type time">11/27(四) 18:30 @ 活大104</h3>  
-          <h3 class="chi-type time">11/28(五) 18:30 @ 新生102</h3>
-          <div class="space"></div> 
-        </div>
-        <div class="col-sm-6 right-time">
-          <h2 class="chi-type time">面試</h2>  
-          <h3 class="chi-type time">11/29(六) @ 二活606</h3>
-          <h3 class="chi-type time">11/30(日) @ 二活606</h3>
-          <!-- <h3 class="chi-type time"> @ 二活606/706</h3> -->
-          <h3 class="chi-type time">&nbsp;&nbsp;12/1(一) @ 新生502</h3>
-          <h3 class="chi-type time">&nbsp;&nbsp;12/2(二) @ 新生504</h3>
-          <!-- <h3 class="chi-type time"> @ 新生</h3> -->
-          <div class="space"></div> 
-        </div>
-
-        <!-- <p>請密切注意</p> -->
-        <!-- <h2>時間：11/27（四）18:30, 11/29（六）18:30</h2>
+    <section id="intro" class="slide intro">
+        <div class="bg" style="position: fixed; width: 100%; height: 100%; background-image: url('images/homepage3.jpg'); background-size: cover; background-repeat: no-repeat; background-position: top center; z-index: 0"></div>
+        <div class="block">
+            <div class="title" data-0="top:0px;" data-100="top:100px;">
+                <a href="https://www.facebook.com/events/312058285645634/?notif_t=plan_user_invited" target="_blank">
+                    <h1 style="text-shadow: 5px 5px 5px #606060;" id="resp_head1">2016HackNTU</h1>
+                    <h2 style="text-shadow: 5px 5px 5px #606060;" id="resp_head2">儲備幹部招募</h2>
+                </a>
+            </div>
+            <div class="logo" data-100="opacity: 0.7; top: 12px;" data-400="opacity: 0; top:-50px;">
+            </div>
+            <div>
+                <!-- <div class="space"></div>  -->
+                <div class="col-sm-6 left-time">
+                    <h2 class="chi-type time">招募說明會</h2>
+                    <div class="space"></div>
+                    <h3 class="chi-type time">4/29(三) 19:00 @ 新生501</h3>
+                    <div class="space"></div>
+                </div>
+                <div class="col-sm-6 right-time">
+                    <h2 class="chi-type time">面試 (擇一時段)</h2>
+                    <h3 class="chi-type time">&nbsp5/9(六) @ 資工系館</h3>
+                    <h3 class="chi-type time">5/10(日) @ 資工系館</h3>
+                    <h3 class="chi-type time">&nbsp5/11(一) @ 資工系館</h3>
+                    <div class="space"></div>
+                </div>
+                <!-- <p>請密切注意</p> -->
+                <!-- <h2>時間：11/27（四）18:30, 11/29（六）18:30</h2>
         <h2>地點：台灣大學新生教學館102教室</h2> -->
-      </div>
-      
-      <!-- Button that triggers the popup -->
-      <button id="my-button-subscribe" class="btn btn-warning btn-lg btn-block subscribe up-time">我要關注</button>
-      <div class="space"></div>
-      <!-- <a href="https://docs.google.com/forms/d/1b3FA0jLWUh1UCCaO0ikqsLlSZ-l-4PUJvMyyePhJftk/viewform" class="btn btn-primary btn-lg btn-block subscribe up-time" role="button" id="recruitment-button">招募報名</a> -->
+            </div>
+            <!-- Button that triggers the popup -->
             
-      <!-- Element to pop up -->
-      <div id="element_to_pop_up">
-        <h2>為什麼我該關注？</h2>
-        <hr>
-        <p class="lead">
-          只要填入您的電子信箱，<br>
-          一旦我們有新的消息與活動，<br>
-          就可以立即通知您，<br>
-          不怕遺漏任何您可能想關注的事，<br>
-          現在就留下您的電子信箱吧！
-        </p>
-        <div class="form-group">
-          <label>姓名</label>
-          <input type="text" class="form-control" id="nameForSubscribe" placeholder="王大明">
         </div>
-        <div class="form-group">
-          <label>Email address</label>
-          <input type="email" class="form-control" id="emailForSubscribe" placeholder="Enter email">
-        </div>
-        <small id="emailValResult"></small><br>
-        <small id="nameValResult"></small><br>
-        <button type="button" class="btn btn-primary" id="subscribe-on">確認</button>
-        <button type="button" class="btn btn-default" id="subscribe-off">取消</button>
-      </div>
-    </div>
-  </section>
-  <section id="about" class="slide about" style="background-image: url('images/food.png')">
-    <div class="block">
-      <div class="wrapper">
-      <div class="describe">
-        <h1 id="resp_head4" data-800-top="opacity: 0.2; left:-50%;" data-100-top="opacity:1;left:0;" class="chi-type">About</h1>
-        <br>
-        <p style="font-size: 18px;color:#75422D">
-        去年，我們在電機二館10小時，悄悄推動世界的巨輪；<br>
-        今年，我們在資工德田館30小時，改造大社會；<br>
-        明年2015，我們即將在台大新體，<br>
-        與各國好手一同掀起全球的巨浪，一同Hacking改變世界。<br>
-        </p>
-
-        <p style="font-size: 18px;color:#75422D">
-        想到之前台大黑客松的盛況，卻沒機會共襄盛舉嗎？<br>
-        看到這麼多厲害的隊伍，以及背景巨大的評審，<br>
-        自己當初卻沒機會參與籌備嗎？<br>
-        現在機會來了，2015HackNTU團隊開始招募有熱情，有想法，不怕挫折與學習的你，加入我們！
-        </p>
-
-        <p style="font-size: 18px;color:#75422D">
-        說明會當天，我們會簡單回顧一下前兩年的活動成果，也會介紹HackNTU的來由與目標，以及招募面試資訊，<br>
-        就希望滿腔熱情的你，不要缺席！
-        </p>
-
-        <!-- <p style="font-size: 18px;">
+        <form class="form" action="https://yoeugene.typeform.com/to/eRvpME" target="_blank">
+            <input type="submit" value="報名說明會" class="btn btn-warning btn-lg btn-block subscribe up-time">
+        </form>
+    </section>
+    <section id="about" class="slide about" style="background-image: url('images/food.png')">
+        <div class="block">
+            <div class="wrapper">
+                <div class="describe">
+                    <h1 id="resp_head4" data-800-top="opacity: 0.2; left:-50%;" data-100-top="opacity:1;left:0;" class="chi-type">HackNTU</h1>
+                    <br>
+                    <h2>願景</h2>
+                    <p style="font-size: 18px;color:#75422D">
+                        HackNTU 致力於推廣 Hacker Spirit，即動手做的
+                        <br> 精神。藉由協助大眾接觸專業技術，擁有實作想法
+                        <br> 或解決問題的能力。
+                    </p>
+                    <br>
+                    <h2>任務</h2>
+                    <p style="font-size: 18px;color:#75422D">
+                        HackNTU 的主要任務為舉辦大型校園黑客松、一系列
+                        <br> 開發小聚、工作坊與課程，透過聚集各種專業好手與企
+                        <br> 業、政府，提供跨領域交流與合作機會，一同解決問題，
+                        <br> 藉此改善社會，改變世界！
+                    </p>
+                    <!-- <p style="font-size: 18px;">
         HackNTU是由學生自發性創辦的非營利組織，曾籌辦台灣第一場大型校園Hackathon，目標是成為學術界與產業間的溝通橋樑！我們每年舉辦校園大型Hackathon，創造各路好手交流激盪的機會；每月定期舉辦開發小聚，作為凝聚互助社群的力量；接下來將在2015年初啟動校園社團，作為教授與學習的平台。
         </p>
         <p style="font-size: 18px;">
         我們希望未來 Hacker 精神不僅僅流傳於資訊人之間，只要具備這種洞見問題並設法實作解決的精神，歡迎加入我們的行列，一起碰撞各種可能性，相信我們能夠改變世界，創造正面影響力。
         </p> -->
-      </div>
-      <div class="icon" data-450-top="transform:scale(0);" data-200-top="transform:scale(1)">
-        <img src="images/fire.png" alt="">
-      </div>
-      </div>
-    </div>
-  </section>
-  <!-- <section class="slide hackathon" style="background-image: url('images/cream_pixels.png')"> -->
-  <section id="hackathon" class="slide hackathon" style="background-image: url('images/line3.jpg')">
-    <div class="block">
-      <h1 data-800-top="opacity: 0; left:-50%;" data-100-top="opacity:1;left:10%;">What Is Hackathon</h1>
-      <div class="describe" data-450-top="opacity: 1; transform:scale(1.1);" data-300-top="opacity:1; transform:scale(1);"
-      style="background-color:transparent">
-        <p style="color:white;">
-           Hackathon是由寫程式『Hack 』和馬拉松『 Marathon』兩部分組成，Hack 原指解決問題、創意程式設計等意思，而非蓄意破壞、竊取機密文件之意。<br>Hackathon 是國外（知名企業和大學如：Facebook、Yahoo、Evernote、紐約大學、賓州大學等皆有舉辦相關活動）十分流行的創意發想的方式，在活動中人們會放下手邊工作，在輕鬆的環境享受美食，並腦力激盪各種解決問題的創意，透過程式設計和設計師以及問題發想者等合作，在有限時間內完成問題界定、創意發想、作品實作、成果展示，通常活動為一天或連續兩天到一週不等。
-        </p>
-      </div>
-      <div class="keyboard" data-600-top="top:155%; transform: rotate(10deg);left: -50px;" data-300-top="transform: rotate(0deg); top:100%; left:-10px; opacity: 1;" data-0-top="top:160%; opacity: 0;"></div>
-    </div>
-  </section>
-  
-
-  <section id="staff" class="slide staff">
-    <div style="width:1024px; margin: 0 auto;" >
-      <h1 data-800-top="opacity: 0; left:-100px;" data-100-top="opacity:1;left:100px;">Departments</h1>
-    </div>
-      <!-- Three columns of text below the carousel -->
-      <!-- <div style="width:1024px; margin: 0 auto;"> -->
-         <!-- <div style="margin:0 auto;" class="row" > -->
-             
-        <!-- </div> -->
-
-    <div style="margin:10px">
-      <div class="row">
-
-
-        <div class="col-sm-6">
-          <img class="img-circle" src="images/clayton6.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h3 style="color:#FFEF24">Cooperative Development</h3>
-          <h4 style="color:#75422D"><a href="https://www.facebook.com/profile.php?id=842927021&fref=ts" target="_blank" style="text-decoration:none;color:#75422D">趙育誠 Clayton</a></h4>
-
-          <p>引擎運轉需要燃料，本部門的目標就是在開發燃料，向各種可能的管道洽談贊助與合作，為HackNTU整個組織網羅企業、政府、媒體等各種能讓大家盡情發揮黑客精神的資源和可能。對於溝通、銷售、提案、簡報、合作開發有經驗有興趣有熱情的你，這裡絕對是你最佳的選擇，在接下來的一年，我們將一起東征西討，成為一起合作、互相切磋的夥伴。</p>
-          <!-- <p>戲劇加政治大三，對於溝通、交涉、談判、辯論、協調以及任何跟口語表達和人有關的事務有很大的興趣跟熱忱，任何事完全可以說衝就衝。曾經以一個MUNer前往紐約兩次，感受世界有多大，接下來希望能以Hacker的身份跟2015HackNTU的夥伴一起向世界挑戰。</p> -->
+                </div>
+                <div class="icon" data-450-top="transform:scale(0);" data-200-top="transform:scale(1)">
+                    <img src="images/fire.png" alt="">
+                </div>
+            </div>
         </div>
-       
-        <div class="col-sm-6">
-          <img class="img-circle" src="images/kuan.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h3 style="color:#FFEF24">Performance Management</h3>
-          <h4 style="color:#75422D"><a href="https://www.facebook.com/s3355004?fref=ts" target="_blank" style="text-decoration:none;color:#75422D">李冠億 Kuan</a></h4>
-          
-          <p>肩負HackNTU籌備團隊的資訊溝通、績效追蹤。本部門以「矩陣型」的結構，參與各部門討論，了解、追蹤、協調各部門的運作進程；身處團隊討論的最前線，亦是團隊的最後防線。願意傾聽和溝通的你，在這裡作實驗性的嘗試，管理知識不再是空想！</p>
-          <!-- <p>會計系畢業，擔任GIS Taiwan 2013總召時，見識到跨領域合作的神奇魔力，並對於一群夥伴透過對話、激盪、構思而後大膽行動的無限可能，感到驚豔、驚喜！作為台大校慶和畢業典禮司儀，是大學生活的有趣經驗。目前在內政部地政司服役。</p> -->
+    </section>
+    <section id="hackathon" class="slide hackathon" style="background-image: url('images/line3.jpg')">
+        <div class="block">
+            <h1 data-800-top="opacity: 0; left:-50%;" data-100-top="opacity:1;left:10%;">儲備幹部計畫介紹</h1>
+            <div class="describe" data-450-top="opacity: 1; transform:scale(1.1);" data-300-top="opacity:1; transform:scale(1);" style="background-color:transparent">
+                <div style="color:white;">
+                    <h2>目標</h2>
+                    <p>
+                        旨在招募 2016HackNTU 的幹部，實際於今年五月至八月進入各部門參與 HackNTU 活動籌劃，並傳承至 2016HackNTU。
+                    </p>
+                    <h2>招募時程</h2>
+                    <ul style="font-size: 16px;">
+                        <li>儲備幹部招募說明會：4/29〈三〉19:00 @新生501 </li>
+                        <li>申請表單開放填寫：4/29〈三〉說明會結束後於本網頁開放填寫</li>
+                        <li>申請表單截止填寫：5/08〈五〉12:00 截止</li>
+                        <li>面試時間地點通知：5/08〈五〉18:00 寄送 email 至報名者信箱</li>
+                        <li>面試時間：5/09〈六〉、5/10〈日〉、5/11〈一〉</li>
+                        <li>錄取名單公布時間：5/13〈三〉發信通知</li>
+                        <li>第一次 HackNTU 全員籌備會議：5/15〈五〉19:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="keyboard" data-600-top="top:155%; transform: rotate(10deg);left: -50px;" data-300-top="transform: rotate(0deg); top:100%; left:-10px; opacity: 1;" data-0-top="top:160%; opacity: 0;"></div>
         </div>
-
-<!--          <div class="col-sm-4">
-          <img class="img-circle" src="images/xiaobun.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h2 id="BunName"><a href="https://www.facebook.com/profile.php?id=100001968982237" target="_blank" style="text-decoration:none;color:#FFEF24">徐粲翔 Bun</a></h2>
-          <h4 style="color:#75422D">Web Development</h4>
-          <p>現台大資工四，前熱舞社教學，平常對於Web前端與Andriod頗有研究，今年暑假在EZTable擔任F2E Intern。喜歡新潮技術，也喜歡跳舞，綽號台大小巨人的我喜歡喝牛奶。</p>
-        </div> -->
-
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <img class="img-circle" src="images/wilson.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h3 style="color:#FFEF24">Digital Marketing</h3>
-          <h4 id="wilsonName"><a href="https://www.facebook.com/ji.huang.948" target="_blank" style="text-decoration:none; color:#75422D" onmouseover="animateWilsonStart()" onmouseout="animateWilsonEnd()">黃偉軒 Wilson</a></h4>
-          <p >2015HackNTU的Digital Marketing推拉式並重，方法推陳出新，未來的我們會在各大社群與媒體活躍，例如PTT、Facebook、Inside、TechOrange、TVBS等等。不管是內容行銷、病毒式行銷或是社群行銷，只要你想得出來並且可以work的都算好行銷。也許你很會寫文案和屁話，也可能妳超會後製動畫和掌鏡，甚至是你本身就長得夠吸睛，我都希望最懂得方法讓眾人注意的妳(你)加入我們！</p>
-          <!-- <p>遊歷台成政三間大學，最後落腳於台大資工。妄想成為Iron man，熱愛高科技、分析資料情報、設計、與人交流。擅長觀察使用者，現正在努力成為像樣的UI/UX Designer。喜歡唱歌，看電影，以及說做就做的Hacker spirit</p> -->
-
+    </section>
+    <section id="staff" class="slide staff">
+        <div class="agenda" style="width:800px; margin: 0 auto;">
+            <h1 data-800-top="opacity: 0; left:-10px;" data-100-top="opacity:1;left:220px;">說明會 Agenda</h1>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>時間</th>
+                        <th>議程</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1845 ~ 1900</th>
+                        <th>報到入場</th>
+                    </tr>
+                    <tr>
+                        <th>1900 ~ 1920</th>
+                        <th>開場＋組織介紹</th>
+                    </tr>
+                    <tr>
+                        <th>1920 ~ 2020</th>
+                        <th>各部門儲備幹部介紹</th>
+                    </tr>
+                    <tr>
+                        <th>2020 ~ 2030</th>
+                        <th>BREAK</th>
+                    </tr>
+                    <tr>
+                        <th>2030 ~ 2040</th>
+                        <th>與部長有約(1)</th>
+                    </tr>
+                    <tr>
+                        <th>2040 ~ 2050</th>
+                        <th>與部長有約(2)</th>
+                    </tr>
+                    <tr>
+                        <th>2050 ~ 2100</th>
+                        <th>與部長有約(3)</th>
+                    </tr>
+                    <tr>
+                        <th>2100 ~&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+                        <th>散場</th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+    </section>
+    <section id="qa" class="slide spirits" style="background-image: url('images/blackline4.jpg'); background-size: cover; background-repeat: no-repeat;">
+        <div class="wrapper">
+            <div style="text-align:center; margin-bottom:20px" class="col-sm-12">
+                <h1 data-300-top="opacity: 0; left:-50%;" data-100-top="opacity:1;left:-35%;">FAQ</h1>
+            </div>
+            <div style="margin:0 auto 0 ">
+                <div style="text-align:center; height: 240px;" class="col-sm-6">
+                    <h2 style="color:#F9F900">儲幹招募和期初社員招募<br>哪裡不一樣？</h2>
+                    <p>一般社員招募的是當年度的工作夥伴，儲備幹部則是在學年交接時招募，不僅當年度要一起打拼、也要有明年必須繼續留任的認知與熱情！</p>
+                </div>
+                <div style="text-align:center; height: 240px;" class="col-sm-6">
+                    <h2 style="color:#F9F900">一定要是 HackNTU 現任社員<br>才能報名嗎？</h2>
+                    <p>為了讓外部有能力的夥伴有加入團隊的機會，這次招募對內外都開放。新進社員有數個月時間熟悉 HackNTU 業務，以準備接任 2016HackNTU 的事務。</p>
+                </div>
+                <div style="text-align:center;height: 240px; " class="col-sm-6">
+                    <h2 style="color:#F9F900">擔任儲備幹部的 loading <br>會不會很重？</h2>
+                    <p>每個部門的運作狀況不同，可於 4/29(三) 招募說明會時詢問各部門負責人實際的工作內容，並自行評估自己可以負擔多少工作量。
+                    </p>
+                </div>
+                <div style="text-align:center; height: 240px;" class="col-sm-6">
+                    <h2 style="color:#F9F900">入選儲備幹部表示明年一定會擔任各部門的重要職位嗎？</h2>
+                    <p>入選儲備幹部保障參與 2016HackNTU 核心團隊的「面試資格」，將在 2015HackNTU 八月黑客松結束後舉行面試決定隔年的核心團隊。</p>
+                </div>
+                <div style="text-align:center;height: 240px; " class="col-sm-6">
+                    <h2 style="color:#F9F900">如果我已經是內部成員了，<br>為什麼還要參與儲備幹部招募？</h2>
+                    <p>若想留任原部門並成為隔年的核心團隊成員，成為儲備幹部可保障你的面試資格。若對其他部門業務有興趣，儲備幹部身分可以讓你同時參與多個部門的運作，詳情可於說明會上瞭解。
+                    </p>
+                </div>
+                <div style="text-align:center;height: 240px; " class="col-sm-6">
+                    <h2 style="color:#F9F900">面試時間剛好不在台北，<br>能不能找其他時間面試？</h2>
+                    <p>若三天均無法參與面試，請提前來信告知，我們將為你安排可行的面試時間。
+                    </p>
+                </div>
 
-        <div class="col-sm-4">
-          <img class="img-circle" src="images/Niu.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h3 style="color:#FFEF24">Hackathon Competition</h3>
-          <h4 style="color:#75422D"><a href="https://www.facebook.com/profile.php?id=1669825062&fref=ts" target="_blank" style="text-decoration:none;color:#75422D">牛勝雍 Niu</a></h4>
-          <p>HackNTU Hackathon是台灣學生開發者、設計師及其他黑客的年度最大賽事與年度聚會，並身為東亞地區校園黑客松的先驅，2015年我們希望將定位從台灣最大，提升至東亞地區最有影響力的黑客社群，並邀請東亞內外各大競賽的優秀團隊一同前來較勁，開放200隊800人，將是東亞地區有史以來規模最大的校園Hackathon。而此部門將會主要負責整體活動設計、志工管理訓練、海外協辦合作！</p>
-          <!-- <p style="margin:10px 5%;">熱愛創意發想及國際跨領域合作，喜愛激發人們動手做、創意構思的過程。曾任AIESEC幹部、汶川災區教學志工、哈佛商學院國際關係論壇等國際組織。致力於推廣生醫領域與工程實實作經驗、管理顧問的結合，並召集iGEM台大國際代表隊於三周內募資百萬，於波士頓和組員共同努力取得世界競賽金牌。未來希望能透過撰寫專欄，inspire更多的你妳您^^</p> -->
-        </div>
-        
-         <div class="col-sm-4">
-          <img class="img-circle" src="images/Alex.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h3 style="color:#FFEF24">School Club</h3>
-          <h4 style="color:#75422D"><a href="https://www.facebook.com/profile.php?id=100001646012981&fref=ts" target="_blank" style="text-decoration:none;color:#75422D">高章琛 Alex</a></h4>
-
-          <p>HackNTU在2014年正式登記為臺灣大學社團，更有效在大學運作學生社群。本部門在與學校進行最有效溝通，保障社團權益並獲得社團最大資源，為社團帶來最大的助益，培養溝通能力及處事做事能力。連結社團的每位成員每也是部門關鍵工作，能重視團隊中每一位的需要，將大家緊密聯合在一起凝聚向心力。只要你熱愛完成任務的成就、經營社團的經驗、接觸交流認識人的感覺，本部門絕對是能讓你成長發揮所長的好所在。</p>
-        </div>
-
-      </div>
-      <div class="row">
-          <div class="col-sm-4">
-          <img class="img-circle" src="images/eric.png" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h3 style="color:#FFEF24">Brand Design</h3>
-          <h4 style="color:#75422D"><a href="https://www.facebook.com/uniericuni?fref=ts" target="_blank" style="text-decoration:none;color:#75422D">辛爾康 Eric</a></h4>
-          <p>Brand Design，旨在為HackNTU提供一套最適切、最引人注目的視覺語言；加入BD、我們就是HackNTU的面容，用影像、圖像和你所想到的各種方式，展現HackNTU ─ Hacker Spirit！熊熊燃燒駭客精神從第一眼就讓你看到。</p>
-          <!-- <p>電機三外加雙主修到快變正科的哲學，同時也在藝術設計學程開心玩耍中；因為想同時兼顧興趣和主科，衝了很多活動做了很多職務，兩年下來一直以為自己過得是不健康的爆肝生活，最近才發現原來只是熊熊燃燒的熱血Hacker魂。喜歡康德和克理斯多福諾蘭的電影。</p> -->
-        </div> 
-       
-      <div class="col-sm-4">
-        <img class="img-circle puchin" src="images/puchin1.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-        <h3 style="color:#FFEF24">Technology Development</h3>
-        <h4 style="color:#75422D"><a href="https://www.facebook.com/profile.php?id=100002146774789" target="_blank" style="text-decoration:none;color:#75422D">陳步青 Puchin</a></h4>
-        <p>網頁開發設計是個橫跨技術與藝術的領域，而做出有質感的網站是Technology Development的使命。十二月會著手進行官網的架設以及報名系統 ，目標是讓任何人點進我們的官網能被深深吸引。只要你有網站開發經驗，甚至是喜歡設計、對UI/UX有興趣，都歡迎你來一展長才！</p>
-         <!-- <p>我很喜歡交朋友、和不同領域的人接觸。programming對我而言不僅有趣，而且是個能有效解決生活上問題的強大工具。最近迷上設計思考，體會到使用者經驗對於一個產品的重要有時更甚於它的功能。</p> -->
-      </div>
-
-        <div class="col-sm-4">
-          <img class="img-circle" src="images/ping-min.jpg" alt="Generic placeholder image" style="width: 180px; height: 180px;">
-          <h3 style="color:#FFEF24">Community Relations</h3>
-          <h4 style="color:#75422D"><a href="https://www.facebook.com/pingmin?fref=ts" target="_blank" style="text-decoration:none;color:#75422D">林秉民 Ping-Min</a></h4>
-          <p>以推廣Hacker Spirit為中心，規劃各式各樣的聚會活動，如工作坊、Hacker開發聚會等等。可以接觸到不同社群中知名的講者，也能學習到舉辦多人活動的能力。自己的活動，自己辦！</p>
-          <!-- <p>電機系大三，雙主修財金，曾試圖用經濟學解釋電子學，對程式有莫名奇妙的熱情。廣泛涉獵不同領域，並持續嘗試將它們系統性的整合。喜歡動手解決問題，希望能讓更多人了解Hacker Spirit，一起讓世界變得更好。</p> -->
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  </section>
-  <section id="qa" class="slide spirits" style="background-image: url('images/blackline4.jpg'); background-size: cover; background-repeat: no-repeat;">
-
-    <div class="wrapper">
-      	<div style="text-align:center; margin-bottom:20px" class="col-sm-12">
-          <h1 data-300-top="opacity: 0; left:-50%;" data-100-top="opacity:1;left:-35%;">FAQ</h1>
-      	</div>
-		
-        <div style="margin:0 auto 0 ">
-          <div style="text-align:center; height: 300px;" class="col-sm-6">
-            <h2 style="color:#F9F900">什麼是黑客精神？</h2>
-            <p>Hacker Spirit指的是善於獨立思考，喜歡自由探索的一種精神，並且熱衷解決自己發現的問題、克服限制。在此已經不只是指精通於寫電腦程式、網路的人，以最短的時間創造最大價值，改變社會，改變世界，就算是藝術，設計，活動其他領域，只要符合以上條件的人，都可稱為Hacker。</p>
-          </div>
-
-          <div style="text-align:center; height: 300px;" class="col-sm-6">
-            <h2 style="color:#F9F900">我覺得好興奮，要如何加入？</h2>
-            <p>我們會舉辦兩場說明會及兩梯次的面試，說明會時會介紹HackNTU的源起與目標，同時會介紹各個部門的工作內容，以及學習點。建議可以先瀏覽一下HackNTU歷年舉辦的活動，有個基本的認識再來說明會，會讓你更了解Hackathon為什麼這麼有意義，也會更清楚哪裡會是你一展長才的地方！</p>
-          </div>
-
-        <div style="text-align:center;height: 300px; " class="col-sm-6">
-          <h2 style="color:#F9F900">我不會寫程式...可以參加嗎？</h2>
-          <p>當然可以，我們部門分工非常多元，而且這是招募籌辦的團隊，而不是參加比賽！歡迎有各種技能，搞笑、帶High氣氛、攝影、美工等等，且有興趣的你，來參加說明會！
-        </p>
-      	</div>
-
-
-		    <div style="text-align:center; height: 300px;" class="col-sm-6">
-          <h2 style="color:#F9F900">四天我剛好都在國外，怎麼辦？</h2>
-          <p>如果你的對本次活動實在很有興趣，但有以上困難或是其他疑問的話，歡迎<a style="text-decoration:none; color:#EB7111;" href="mailto:hackntu@gmail.com">來信</a>通知，我們都很樂意和您討論。但還是強烈建議參加說明會，才不會漏掉完整的資訊以及認識各路好手的機會！</p>
-        </div>
-
-        </div>
-        
-      
-      <!-- <div class="coding" data-200-center-center="transform: rotateY(90deg); transform-origin:0% 0%; opacity: 0; " data--0-center-center="opacity:0.8; transform: rotateY(0deg); transform-origin:0% 0%; top:0px;"  data--400-center-center="top:50px;">
+            </div>
+            <!-- <div class="coding" data-200-center-center="transform: rotateY(90deg); transform-origin:0% 0%; opacity: 0; " data--0-center-center="opacity:0.8; transform: rotateY(0deg); transform-origin:0% 0%; top:0px;"  data--400-center-center="top:50px;">
 
         <h1 id="res_code" class="chi-type left">最短的時間創造最大價值</h1>
         <img class="icon" src="images/time.png" alt="">
@@ -378,184 +313,184 @@
         <h1 class="chi-type left">開發者黑客精神文化流傳</h1>
         <img class="icon" src="images/hack.png" alt="">
       </div> -->
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2>Contact Us</h2>
+            <a href="mailto:hackntu@gmail.com">電子信箱</a>
+            <span> | </span>
+            <a href="https://www.facebook.com/hackNTU" target="_blank">粉絲專頁</a>
+        </div>
+    </footer>
+    <div id="preload">
+        <img src="images/bedge.png" width="1" height="1" alt="" />
     </div>
-  </section>
-
-  <footer>
-    <div>
-      <h2>Contact Us</h2>
-      <a href="https://www.facebook.com/events/312058285645634/?notif_t=plan_user_invited" target="_blank" style="margin-left: 3px;">活動專頁</a>
-      <span> | </span>
-      <a href="https://www.facebook.com/hackNTU" target="_blank">粉絲專頁</a>
-    </div>
-    <a class="author" href="mailto:hackntu@gmail.com">hackntu@gmail.com</a>
-  </footer>
-  <div id="preload">
-     <img src="images/bedge.png" width="1" height="1" alt=""/>
-  </div>
-
-
 </body>
-
 <script>
-  $("#resp_head1").fitText(0.6);
-  $("#resp_head2").fitText(0.9);
-  $("#resp_head3").fitText(1.04);
-  $("#resp_head4").fitText(0.7);
-  $("#res_code").fitText(1.1);
+$("#resp_head1").fitText(0.6);
+$("#resp_head2").fitText(0.9);
+$("#resp_head3").fitText(1.04);
+$("#resp_head4").fitText(0.7);
+$("#res_code").fitText(1.1);
 </script>
 <script type="text/javascript" src="./javascripts/avgrund.js"></script>
 <!-- <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> -->
-
 <!-- for subscription pop up and close -->
 <script>
-;(function($) {
-  // DOM Ready
-  $(function() {
-    // Binding a click event
-    // From jQuery v.1.7.0 use .on() instead of .bind()
-    $('#my-button-subscribe').bind('click', function(e) {
-      // Prevents the default action to be triggered. 
-      e.preventDefault();
-      // Triggering bPopup when click event is fired
-      $('#element_to_pop_up').bPopup({
-        modalClose: false,
-        opacity: 0.6
-        // positionStyle: 'fixed' //'fixed' or 'absolute'
-      });
+;
+(function($) {
+    // DOM Ready
+    $(function() {
+        // Binding a click event
+        // From jQuery v.1.7.0 use .on() instead of .bind()
+        $('#my-button-subscribe').bind('click', function(e) {
+            // Prevents the default action to be triggered. 
+            e.preventDefault();
+            // Triggering bPopup when click event is fired
+            $('#element_to_pop_up').bPopup({
+                modalClose: false,
+                opacity: 0.6
+                    // positionStyle: 'fixed' //'fixed' or 'absolute'
+            });
+        });
     });
-  });
 })(jQuery);
 </script>
-
-<script>
-  $(function() {
-    $('#subscribe-off').bind('click', function(e) {
-      e.preventDefault();
-      $('#element_to_pop_up').bPopup().close();
-    });
-  });
-</script>
-
 <script>
 $(function() {
-  var time = new Date().getTime();
-  var myFirebaseRef = new Firebase("https://resplendent-torch-8356.firebaseio.com/subscribe_email");
-  function storeEmail(testEmail, name) {
-    var usersRef = myFirebaseRef.child(name);
-    usersRef.set({
-      email: testEmail,
-      subscribeTime: time
+    $('#subscribe-off').bind('click', function(e) {
+        e.preventDefault();
+        $('#element_to_pop_up').bPopup().close();
     });
-  }
-
-  function validation() {
-    var testEmail = $('#emailForSubscribe').val();
-    // var name = $('#nameForSubscribe').val();
-    var re = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    if(re.test(testEmail)) {
-      if($('#nameForSubscribe').val() != ''){
-      	storeEmail(testEmail, $('#nameForSubscribe').val());
-      	$('#emailForSubscribe').val('');
-      	$('#nameForSubscribe').val('');
-      	$('#element_to_pop_up').bPopup().close();
-      }
-      else{
-      	$('#nameValResult').text("您叫什麼名字呢？ ：）");
-      	$('#nameValResult').css("color", "orange");
-      	$('#emailValResult').text("");
-      	
-      }
-    }
-    else {
-      $('#emailValResult').text("您的email格式好像不正確唷，請再檢查一次：）");
-      $('#emailValResult').css("color", "green");
-    }
-    return false;
-  }
-
-  $('#subscribe-on').bind('click', validation);
 });
 </script>
-
 <script>
+$(function() {
+    var time = new Date().getTime();
+    var myFirebaseRef = new Firebase("https://resplendent-torch-8356.firebaseio.com/subscribe_email");
 
-  function resizePages() {
+    function storeEmail(testEmail, name) {
+        var usersRef = myFirebaseRef.child(name);
+        usersRef.set({
+            email: testEmail,
+            subscribeTime: time
+        });
+    }
+
+    function validation() {
+        var testEmail = $('#emailForSubscribe').val();
+        // var name = $('#nameForSubscribe').val();
+        var re = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if (re.test(testEmail)) {
+            if ($('#nameForSubscribe').val() != '') {
+                storeEmail(testEmail, $('#nameForSubscribe').val());
+                $('#emailForSubscribe').val('');
+                $('#nameForSubscribe').val('');
+                $('#element_to_pop_up').bPopup().close();
+            } else {
+                $('#nameValResult').text("您叫什麼名字呢？ ：）");
+                $('#nameValResult').css("color", "orange");
+                $('#emailValResult').text("");
+
+            }
+        } else {
+            $('#emailValResult').text("您的email格式好像不正確唷，請再檢查一次：）");
+            $('#emailValResult').css("color", "green");
+        }
+        return false;
+    }
+
+    $('#subscribe-on').bind('click', validation);
+});
+</script>
+<script>
+function resizePages() {
     var h = $(window).height();
     var height = h < 600 ? 600 : h;
-    $('section').css('height',height);
-    $('.spirits').css('height',height*1.5);
+    $('section').css('height', height);
+    $('.spirits').css('height', height * 1.5);
     $('.staff').removeAttr('style');
-  }
-  resizePages();
-  if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-    var sk = skrollr.init({forceHeight:false});
+}
+resizePages();
+if (!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+    var sk = skrollr.init({
+        forceHeight: false
+    });
     skrollr.menu.init(sk);
-  }
-  $(function(){
+}
+$(function() {
     $(window).resize(function(e) {
-      resizePages();
-      sk.refresh();
+        resizePages();
+        sk.refresh();
     });
-  });
+});
 </script>
-
 <script>
-  $('body').hide();
-    $(window).load(function() {
+$('body').hide();
+$(window).load(function() {
     // this will fire after the entire page is loaded, including images
-  // });
-      // $('#intro').preload(function(){
-      //   var t = setTimeout(function(){
-      //     $('#intro').show();
-      //     $('.title').show().addClass('animated bounceInUp');
-      //     $('.left-time').show().addClass('animated bounceInLeft');  
-      //     $('.right-time').show().addClass('animated bounceInRight');
-      //     $('body').show();
-      //     },500
-      //   );
-      $('#intro').show();
-      $('.title').show().addClass('animated bounceInUp').one('webkitAnimationEnd mozAnimationEnd  MSAnimationEnd oanimationend animationend', function() {$(this).removeClass('bounceInUp')});
-      $('.left-time').show().addClass('animated bounceInLeft');  
-      $('.right-time').show().addClass('animated bounceInRight');
-      $('.up-time').show().addClass('animated zoomIn');
-      $('body').show();
+    // });
+    // $('#intro').preload(function(){
+    //   var t = setTimeout(function(){
+    //     $('#intro').show();
+    //     $('.title').show().addClass('animated bounceInUp');
+    //     $('.left-time').show().addClass('animated bounceInLeft');  
+    //     $('.right-time').show().addClass('animated bounceInRight');
+    //     $('body').show();
+    //     },500
+    //   );
+    $('#intro').show();
+    $('.title').show().addClass('animated bounceInUp').one('webkitAnimationEnd mozAnimationEnd  MSAnimationEnd oanimationend animationend', function() {
+        $(this).removeClass('bounceInUp')
     });
-  // hover on title and then enter FB event page
-  $('.title').on('hover', function() {
+    $('.left-time').show().addClass('animated bounceInLeft');
+    $('.right-time').show().addClass('animated bounceInRight');
+    $('.up-time').show().addClass('animated zoomIn');
+    $('body').show();
+});
+// hover on title and then enter FB event page
+$('.title').on('hover', function() {
     $(this).addClass('pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
         $(this).removeClass('pulse');
     });
-  });
+});
 
-  $('.sidenav-wrapper').on("mouseenter mouseleave",function(){
+$('.sidenav-wrapper').on("mouseenter mouseleave", function() {
     $(this).toggleClass('sidenav-wrapper-hover');
-    });
-  $('.sidenav li a').focus(function(){
+});
+$('.sidenav li a').focus(function() {
     $(this).blur();
-  })
+})
 </script>
-
 <script>
-  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  // ga('create', 'UA-40922390-1', 'hackntu.org');
-  // ga('send', 'pageview');
-  $('.tip').miniTip({
+// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+// (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+// m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+// })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+// ga('create', 'UA-40922390-1', 'hackntu.org');
+// ga('send', 'pageview');
+$('.tip').miniTip({
     className: 'green',
     offset: 30,
-    showAnimateProperties: {'top': '-=10'},
-    hideAnimateProperties: {'top': '+=10'},
+    showAnimateProperties: {
+        'top': '-=10'
+    },
+    hideAnimateProperties: {
+        'top': '+=10'
+    },
     position: 'bottom',
     onLoad: function(element, minitip) {
-      $(element).animate({'opacity': 0.35}, '350');
+        $(element).animate({
+            'opacity': 0.35
+        }, '350');
     },
     onHide: function(element, minitip) {
-      $(element).animate({'opacity': 1}, '250');
+        $(element).animate({
+            'opacity': 1
+        }, '250');
     }
-  });
-
+});
 </script>
+
 </html>
