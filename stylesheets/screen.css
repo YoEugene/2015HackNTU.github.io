@@ -436,9 +436,16 @@ div#preload { display: none; }
   width: 1024px;
 }
 
-.form {
+.upper-button {
   position: absolute;
-  bottom: 30px;
+  bottom: 6.5em;
+  left: 0;
+  right: 0;
+}
+
+.submit-form {
+  position: absolute;
+  bottom: 2em;
   left: 0;
   right: 0;
 }
@@ -457,6 +464,7 @@ div#preload { display: none; }
   font-family: "Patua One", cursive;
   font-weight: 500;
   position: relative;
+  margin-top: 50px;
 }
 
 
@@ -498,7 +506,7 @@ div#preload { display: none; }
   width: 40%;
   padding: 10px;
   opacity: 0.9;
-  font-size: 3em;
+  font-size: 2em;
   font-family: "Patua One", cursive;
 }
 
@@ -541,7 +549,7 @@ div#preload { display: none; }
   max-width: 800px;
   width: 80%;
   /*text-shadow: -4px 4px #000000;*/
-  text-align: center;
+  text-align: left;
   line-height: 2em;
   color: #FFFFFF;
 }
@@ -553,7 +561,7 @@ div#preload { display: none; }
   position: relative;
   margin: 3% auto 20px;
   width: 360px;
-  height: 60px;
+  height: 30px;
 }
 /* line 92, ../sass/screen.scss */
 .logo .logo-round {
@@ -792,19 +800,20 @@ ul.arrow li {
 .about .icon {
   display: inline-block;
   position: relative;
-  top: -150px;
+  top: -210px;
   width: 320px;
   height: 320px;
   border-radius: 50%;
-  background: #FFD14F;
+  /*background: #FFD14F;*/
 }
 /* line 340, ../sass/screen.scss */
 .about .icon img {
-  -webkit-animation: flame 3s infinite;
+  width: 400px;
+  /*-webkit-animation: flame 3s infinite;
   -moz-animation: flame 3s infinite;
   -ms-animation: flame 3s infinite;
   -o-animation: flame 3s infinite;
-  animation: flame 3s infinite;
+  animation: flame 3s infinite;*/
 }
 /* line 348, ../sass/screen.scss */
 .about .wrapper {
@@ -905,7 +914,7 @@ ul.arrow li {
 }
 /* line 429, ../sass/screen.scss */
 .hackathon .describe {
-  max-width: 600px;
+  max-width: 700px;
   width: 80%;
   margin: 3% 8% 0;
   padding: 5px 12px;
